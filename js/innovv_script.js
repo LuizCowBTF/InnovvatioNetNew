@@ -1,14 +1,11 @@
 (function($) {
-
 	"use strict";
-	
-	  // Cache selectors
     var lastId,
     topMenu = $(".menu-holder"),
     topMenuHeight = 55,
-    // All list items
+    // lista todos os itens
     menuItems = topMenu.find("a"),
-    // Anchors corresponding to menu items
+    // Ancoras correspondentes para o item de menu
     scrollItems = menuItems.map(function(){
       var item = $($(this).attr("href"));
       
@@ -21,8 +18,8 @@
       topMenuHeight = 0;
     }
 
-    // Bind click handler to menu items
-	  // so we can get a fancy scroll animation
+    // Vincular o manipulador de cliques aos itens de menu
+	  // para que possamos obter uma animação de rolagem sofisticada
     menuItems.click(function(e){
       var href = $(this).attr("href");
       var offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
@@ -34,24 +31,24 @@
       e.preventDefault();
     });
 	  
-    // Bind to scroll
+    // Vincular para rolar
     $(window).scroll(function(){
-      // Get container scroll position
+      // Obtenha a posição de rolagem do contêiner
       var fromTop = $(this).scrollTop()+topMenuHeight;
        
-      // Get id of current scroll item
+      // Obtenha o ID do item de rolagem atual
       var cur = scrollItems.map(function(){
         if ($(this).offset().top < fromTop)
           return this;
       });
       
-      // Get the id of the current element
+      // Obtenha o id do elemento atual
       cur = cur[cur.length-1];
       var id = cur && cur.length ? cur[0].id : "";
        
       if (lastId !== id && id != "") {
         lastId = id;
-        // Set/remove active class
+        // Definir/remover classe ativa
         menuItems
          .parent().removeClass("active")
          .end().filter("[href=#"+id+"]").parent().addClass("active");
@@ -60,7 +57,7 @@
       changeNavMenu();
     });
 
-    //mobile menu and desktop menu
+    // menu móvel e menu desktop
     $("#responsive-menu").css({"right":-1500});
     $("#mobile_menu").click(function(){
         $("#responsive-menu").show();
@@ -105,10 +102,9 @@ function changeNavMenu(){
   }
 }
 
-/* http://marxo.me/target-ie-in-css/
------------------------------------------*/
+
 function detectIE(){
-  // Detect IE and append class to <html> element
+  // Detecte o IE e anexe a classe ao elemento <html>
   var UA = navigator.userAgent;
   var html = document.documentElement;
   if (UA.indexOf("IEMobile") === -1) {
@@ -120,33 +116,17 @@ function detectIE(){
   }
 }
 
-/* HTML document is loaded. DOM is ready. 
------------------------------------------*/
-$(document).ready(function()
-{
-  /* jCarousel http://sorgalla.com/jcarousel/ */
-  $('.jcarousel').jcarousel();
-  $('.jcarousel-control-prev')
-      .on('jcarouselcontrol:active', function() {
-          $(this).removeClass('inactive');
-      })
-      .on('jcarouselcontrol:inactive', function() {
-          $(this).addClass('inactive');
-      })
-      .jcarouselControl({
-          target: '-=1'
-      });
 
-  $('.jcarousel-control-next')
-      .on('jcarouselcontrol:active', function() {
-          $(this).removeClass('inactive');
-      })
-      .on('jcarouselcontrol:inactive', function() {
-          $(this).addClass('inactive');
-      })
-      .jcarouselControl({
-          target: '+=1'
-      });
+// DARK MODE
+function changeTheme() {
+  var element = document.body;
+   element.classList.toggle("dark");
+}
 
-    detectIE();
-});
+function changeBtn(x) {
+  x.classList.toggle("fa-moon-o")
+}
+
+
+
+

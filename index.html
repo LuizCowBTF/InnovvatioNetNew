@@ -21,160 +21,228 @@
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
 		<link href="css/font-awesome.min.css" rel="stylesheet">
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="css/templatemo_style.css" rel="stylesheet" type="text/css">
+		<link href="css/innovv_style.css" rel="stylesheet" type="text/css">
 	</head>
-	<body>
+	<body class="dark">
 		<nav id="responsive-menu">
 			<ul class="menu-holder">
-				<li class="active"><a href="#home"><i class="fa fa-home"></i>Home</a></li>
-				<li><a href="#about"><i class="fa fa-briefcase"></i>About</a></li>
-				<li><a href="#services"><i class="fa fa-cogs"></i>Services</a></li>
-				<li><a href="#products"><i class="fa fa-list"></i>Products</a></li>
-				<li><a href="#contact"><i class="fa fa-envelope"></i>Contact</a></li>
+				<li class="active"><a href="#home"><i class="fa fa-home"></i>Início</a></li>
+				<li><a href="#about"><i class="fa fa-briefcase"></i>Somos</a></li>
+				<li><a href="#services"><i class="fa fa-cogs"></i>Serviços</a></li>
+				<li><a href="#products"><i class="fa fa-list"></i>Produtos</a></li>
+				<li><a href="#contact"><i class="fa fa-envelope"></i>Contatos</a></li>
 			</ul>
 		</nav>
-		<div class="templatemo-site-header">
+		<div class="innovv_site-header">
 			<div class="container">
-				<div class="row templatemo-position-relative">				
-					<nav class="hidden-xs text-uppercase templatemo-nav">
+				<div class="row innovv_position-relative">
+					<nav class="hidden-xs text-uppercase innovv_nav">
 						<ul class="menu-holder">
-							<li class="active"><a href="#home">Home</a></li>
-							<li><a href="#about">About</a></li>					
-							<li><a href="#services">Services</a></li>
-							<li><a href="#products">Products</a></li>
-							<li><a href="#contact">Contact</a></li>
+							<li class="active"><a href="#home">Início</a></li>
+							<li><a href="#about">Somos</a></li>
+							<li><a href="#services">Serviços</a></li>
+							<li><a href="#products">Produtos</a></li>
+							<li><a href="#contact">Contatos</a></li>
+							<li>
+								<input type="checkbox" name="change-theme" id="change-theme" />
+								<label for="change-theme">
+									<button class="btnTheme" onclick="changeTheme(this)">
+										<i onclick="changeBtn(this)" class="fa fa-sun-o"></i>
+									</button>
+								</label>
+							</li>
 						</ul>
 					</nav>
-					<h1 class="templatemo-site-name">
-						<span class="templatemo-brown">The</span> 
-						<span class="templatemo-gold">Brownie</span>
+					<h1 class="innovv_site-name">
+						<img src="assets/images/logoInnovvatio.png" alt="Innovvatio" />
 					</h1>
 					<div class="text-right visible-xs">
-						<a href="#" id="mobile_menu"><span class="fa fa-bars"></span></a>
+						<a href="#" id="mobile_menu" alt><span class="fa fa-bars"></span></a>
 					</div>
 				</div>
-			</div>    	
+			</div>
 		</div>
-		<section id="home" class="templatemo-section">
+		<section id="home" class="innovv_section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-6 col-md-6 templatemo-position-relative">
-						<div class="templatemo-flex-center templatemo-black-bg text-center">
-							<div class="templatemo-home-image-container">
-								<img src="images/bicycle.jpg" alt="Home" class="templatemo-home-image">
-								<div class="templatemo-image-overlay">							
-									<span class="fa fa-search templatemo-search-icon"></span>
-									<p class="text-uppercase templatemo-gold">The Stret</p>
-									<p class="text-uppercase">Sioutis mauris Justo</p>												
+					<div class="col-lg-6 col-md-6 innovv_position-relative">
+						<div class="innovv_flex-center innovv_black-bg text-center">
+							<div class="innovv_home-image-container">
+								<img src="assets/images/innovacao.png" alt="Home"
+									class="innovv_home-image">
+								<div class="innovv_image-overlay">
+									<p class="text-uppercase innovv_gold">Innovvatio</p>
+									<p class="text-uppercase">Soluções em Tecnologia</p>
 								</div>
 							</div>
-						</div>										
+						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">duis sed odio amet</h2>
-							<h3 class="templatemo-gold">class  apent  tacit  sioutis mauris just olmorbi</h3>
-							<p class="margin-top-30">The Brownie is free responsive template from <span class="blue">template</span><span class="green">mo</span>.com website. You can use this layout for any of your website. Please spread a word about us. Thank you. This template uses CSS Flexbox, which is supported on IE 10+ and recent versions of all other major browsers. Check out <a href="http://caniuse.com/#feat=flexbox" target="_blank">caniuse.com</a> for detailed browser support information.</p>
-							<a href="#" class="btn text-uppercase templatemo-btn templatemo-info-btn">Lorem Ipsum</a>
-						</div>					
+						<div class="innovv_content-box innovv_second-box">
+							<h2 class="innovv_brown">uma empresa familiar</h2>
+							<h3 class="innovv_gold">duas gerações, pai e filho na vanguarda da
+								tecnologia</h3>
+							<p class="margin-top-30">
+								Há mais de trinta e cinco anos o fundador e patriarca iniciava na área,
+								e que desde então apresenta inovações em serviços de tecnologia.
+								Agora, seu sucessor e filho entra com a garra da juventude para
+								apresentar mais inovações em serviços.
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="about" class="templatemo-section">
+		<section id="about" class="innovv_section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box text-right">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">Meet Our</span>
-								<span class="templatemo-section-title">Creative <span class="templatemo-gold"><strong>Team</strong></span></span>
+						<div class="innovv_content-box-about text-right">
+							<h2 class="innovv_brown">
+								<span class="innovv_section-title">Nossa</span>
+								<span class="innovv_section-title"><span class="innovv_gold"><strong>Família</strong>
+										e <strong>Valores</strong></span></span>
 							</h2>
-							<p class="margin-top-30">Lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.
-		Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
-							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Proin condimentum fermentum nunc. Suspendisse in orci enim.</p>
-						</div>										
+							<p class="margin-top-15">
+								Tendo como seu primeiro emprego uma vaga na área de informática,
+								apaixonou-se pelo trabalho e nunca mais fez outra coisa na vida.
+								E nessa trajetória, já se vão mais de trinta e cinco anos de dedicação.
+							</p>
+							<p>
+								Com apenas dezenove anos, já chega apresentando o melhir do presente e
+								futuro em conhecimentos. Python, Iot, Realidade Aumentada e mais o que a
+								tecnologia.
+							</p>
+						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="jcarousel-wrapper templatemo-team">
-									<div class="jcarousel">
-										<ul>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-1.jpg" alt="Team Member 1" class="tm-team-member-img">
-													</div>								        		
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Aenean sollicitudin</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15 img-responsive center-block">
-													<p class="margin-top-15">Ribendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-													<p class="templatemo-brown text-uppercase">Duised odio</p>
-												</div>
-											</li>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-2.jpg" alt="Team Member 2" class="img-circle tm-team-member-img">
-													</div>
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Ribendum auctor</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15">
-													<p class="margin-top-15">Aenean sollicitudin, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-													<p class="templatemo-brown text-uppercase">Nisi elit</p>
-												</div>							        	
-											</li>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-3.jpg" alt="Team Member 3" class="img-circle tm-team-member-img">
-													</div>
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">sagittis sem</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15">
-													<p class="margin-top-15">Ribendum auctornisi elit consequat ipsum, nisi elit sem nibh id elit.</p>
-													<p class="templatemo-brown text-uppercase">Nec sagittis</p>
-												</div>							        	
-											</li>
-										</ul>
+						<div class="innovv_content-box-about text-left">
+							<div class="innovv_flex-center innovv_black-bg text-center">
+								<div class="innovv_flex-center innovv_brown-rectangle-bg">
+									<div class="innovv_flex-item-ie-fix padding-15">
+										<h2 class="innovv_gold">Nossos Valores</h2>
+										<div class="innovv_service-container margin-top-15">
+											<div class="innovv_service-content text-left">
+												<h3 class="innovv_service-title innovv_brown">respeitar as pessoas</h3>
+												<p class="innovv_service-description">
+													Valorizamos o capital humano como o mais importante ativo de nossos
+													clientes.
+													Respeitando a diversidade e não fazendo distinção de ninguem.
+												</p>
+											</div>
+										</div>
+										<div class="innovv_service-container">
+											<div class="innovv_service-content text-left">
+												<h3 class="innovv_service-title innovv_brown">ética</h3>
+												<p class="innovv_service-description">
+													Nossa empresa é familiar e feita por pessoas integras.
+													Sempre respeitando aos preceitos de condutas corretas e unindo
+													forças em prol dos melhores resultados e relacionamentos com nossos
+													parceiros.
+												</p>
+											</div>
+										</div>
+										<div class="innovv_service-container">
+											<div class="innovv_service-content text-left">
+												<h3 class="innovv_service-title innovv_brown">determinação em
+													inovação</h3>
+												<p class="innovv_service-description">
+													Somos focados em resultados, comprometidos com qualidade de tudo
+													que entregamos.
+													Somos perseverantes e mesmo diante das dificuldades somos criativos
+													para inovar.
+												</p>
+											</div>
+										</div>
 									</div>
-									<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
-									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
 								</div>
-							</div>						
-						</div>					
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row margin-top-30">
+					<span class="innovv_section-title text-center">
+						<h2 class="innovv_brown">
+							<span class="innovv_gold">Conheça a Nossa <strong>Família</strong></span>
+						</h2>
+					</span>
+				</div>
+				<div class="row margin-top-30">
+					<div class="col-lg-6 col-md-6">
+						<div class="innovv_flex-center innovv_black-bg">
+							<div class="innovv_flex-center innovv_brown-rectangle-bg">
+								<div class="text-center innovv_team-member-container">
+									<div class="innovv_member-img-container">
+										<img src="assets/images/team-img-frame.png" alt="Team img frame"
+											class="innovv_img-frame">
+										<img src="assets/images/team-member-1.png" alt="Menbro da Família 1"
+											class="tm-team-member-img">
+									</div>
+									<h3
+										class="tm-team-member-title innovv_gold text-uppercase margin-top-15">Luiz
+										Claudio</h3>
+									<img src="assets/images/underline.png" alt="Underline"
+										class="margin-top-15 img-responsive center-block">
+									<p class="margin-top-15">Formação em Análise e Desenvolvimento de
+										Sistemas <br> Estudante de Engenharia da Computação.</p>
+									<p class="innovv_brown text-uppercase"><a
+											href="profiles/p01/index.html">Sócio, fundador e pai</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6">
+						<div class="innovv_flex-center innovv_black-bg">
+							<div class="innovv_flex-center innovv_brown-rectangle-bg">
+								<div class="text-center innovv_team-member-container">
+									<div class="innovv_member-img-container">
+										<img src="assets/images/team-img-frame.png" alt="Team img frame"
+											class="innovv_img-frame">
+										<img src="assets/images/team-member-2.png" alt="Menbro da Família 2"
+											class="tm-team-member-img">
+									</div>
+									<h3
+										class="tm-team-member-title innovv_gold text-uppercase margin-top-15">Fábio
+										Gomes</h3>
+									<img src="assets/images/underline.png" alt="Underline"
+										class="margin-top-15 img-responsive center-block">
+									<p class="margin-top-15">Formando em Engenharia da Computação.</p>
+									<p class="innovv_brown text-uppercase"><a
+											href="profiles/p02/index.html">Sócio e filho</a></p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section id="services" class="templatemo-section">
+		<section id="services" class="innovv-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg text-center">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="templatemo-flex-item-ie-fix padding-30">
-									<h2 class="templatemo-gold">Our Plans</h2>
-									<div class="templatemo-service-container margin-top-15">
-										<img src="images/plan-1.png" alt="Plan 1" class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">duis sed odio sit amet</h3>
-											<p class="templatemo-service-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+						<div class="innovv-flex-center innovv-black-bg text-center">
+							<div class="innovv-flex-center innovv-brown-rectangle-bg">
+								<div class="innovv-flex-item-ie-fix padding-30">
+									<h2 class="innovv-gold">Our Plans</h2>
+									<div class="innovv-service-container margin-top-15">
+										<img src="images/plan-1.png" alt="Plan 1" class="innovv-service-image">
+										<div class="innovv-service-content text-left">
+											<h3 class="innovv-service-title innovv-brown">duis sed odio sit amet</h3>
+											<p class="innovv-service-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
 										</div>						
 									</div>
-									<div class="templatemo-service-container">
-										<img src="images/plan-2.png" alt="Plan 2" class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">sagittis sem nibhd</h3>
-											<p class="templatemo-service-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat.</p>	
+									<div class="innovv-service-container">
+										<img src="images/plan-2.png" alt="Plan 2" class="innovv-service-image">
+										<div class="innovv-service-content text-left">
+											<h3 class="innovv-service-title innovv-brown">sagittis sem nibhd</h3>
+											<p class="innovv-service-description">Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat.</p>	
 										</div>						
 									</div>
-									<div class="templatemo-service-container">
-										<img src="images/plan-3.png" alt="Plan 3" class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">duis sed odio sit amet</h3>
-											<p class="templatemo-service-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>	
+									<div class="innovv-service-container">
+										<img src="images/plan-3.png" alt="Plan 3" class="innovv-service-image">
+										<div class="innovv-service-content text-left">
+											<h3 class="innovv-service-title innovv-brown">duis sed odio sit amet</h3>
+											<p class="innovv-service-description">Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>	
 										</div>						
 									</div>	
 								</div>
@@ -182,10 +250,10 @@
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">Powerful</span>
-								<span class="templatemo-section-title">Creative <span class="templatemo-gold"><strong>Design</strong></span></span>
+						<div class="innovv-content-box innovv-second-box">
+							<h2 class="innovv-brown">
+								<span class="innovv-section-title">Powerful</span>
+								<span class="innovv-section-title">Creative <span class="innovv-gold"><strong>Design</strong></span></span>
 							</h2>
 							<p class="margin-top-30">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudinl
 		dorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit. tis</p>
@@ -194,40 +262,40 @@
 				</div>
 			</div>
 		</section>
-		<section id="products" class="templatemo-section">
+		<section id="products" class="innovv-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box text-right">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">The Best</span>
-								<span class="templatemo-section-title">Quality <span class="templatemo-gold"><strong>Products</strong></span></span>
+						<div class="innovv-content-box text-right">
+							<h2 class="innovv-brown">
+								<span class="innovv-section-title">The Best</span>
+								<span class="innovv-section-title">Quality <span class="innovv-gold"><strong>Products</strong></span></span>
 							</h2>
 							<p class="margin-top-30">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.</p>
 						</div>					
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="jcarousel-wrapper templatemo-products">
+						<div class="innovv-flex-center innovv-black-bg">
+							<div class="innovv-flex-center innovv-brown-rectangle-bg">
+								<div class="jcarousel-wrapper innovv-products">
 									<div class="jcarousel">
 										<ul>
 											<li>
-												<div class="templatemo-product-container text-center">
-													<h3 class="templatemo-gold">Product Name</h3>
-													<img src="images/product-1.png" alt="Product 1" class="templatemo-product-img">	
+												<div class="innovv-product-container text-center">
+													<h3 class="innovv-gold">Product Name</h3>
+													<img src="images/product-1.png" alt="Product 1" class="innovv-product-img">	
 												</div>	
 											</li>
 											<li>
-												<div class="templatemo-product-container text-center">
-													<h3 class="templatemo-gold">Smart Phone</h3>
-													<img src="images/product-2.png" alt="Product 2" class="templatemo-product-img">	
+												<div class="innovv-product-container text-center">
+													<h3 class="innovv-gold">Smart Phone</h3>
+													<img src="images/product-2.png" alt="Product 2" class="innovv-product-img">	
 												</div>								        	
 											</li>
 											<li>
-												<div class="templatemo-product-container text-center">
-													<h3 class="templatemo-gold">Cogs</h3>
-													<img src="images/product-3.png" alt="Product 3" class="templatemo-product-img">	
+												<div class="innovv-product-container text-center">
+													<h3 class="innovv-gold">Cogs</h3>
+													<img src="images/product-3.png" alt="Product 3" class="innovv-product-img">	
 												</div>								        	
 											</li>
 										</ul>
@@ -241,11 +309,11 @@
 				</div>
 			</div>
 		</section>
-		<section id="contact" class="templatemo-section">
+		<section id="contact" class="innovv-section">
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="innovv-flex-center innovv-black-bg">
 							<form action="#" method="post">
 								<div class="tm-contact-form">
 									<div class="form-group">
@@ -261,21 +329,21 @@
 										<textarea id="contact_message" class="form-control" rows="8" placeholder="Message..."></textarea>
 									</div>
 								</div>
-								<button type="submit" class="btn text-uppercase templatemo-btn templatemo-send-btn">Send</button>
+								<button type="submit" class="btn text-uppercase innovv-btn innovv-send-btn">Send</button>
 							</form>	
 						</div>
 					</div>
 					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">Get In <span class="templatemo-gold">Touch</span></h2>
+						<div class="innovv-content-box innovv-second-box">
+							<h2 class="innovv-brown">Get In <span class="innovv-gold">Touch</span></h2>
 							<p class="margin-top-30">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio nisi elit consequat ipsum, nec sagittis sem nibh id elit. . </p>
 							<div>
-								<img src="images/social-icons.png" alt="Social icons" class="templatemo-social-icons-img">
-								<a href="http://www.facebook.com"><div id="facebook" class="templatemo-social-icon"></div></a>
-								<a href="http://www.twitter.com"><div id="twitter" class="templatemo-social-icon"></div></a>
-								<a href="http://plus.google.com"><div id="google" class="templatemo-social-icon"></div></a>
-								<a href="http://www.vimeo.com"><div id="vimeo" class="templatemo-social-icon"></div></a>
-								<a href="http://www.flickr.com"><div id="flickr" class="templatemo-social-icon"></div></a>				
+								<img src="images/social-icons.png" alt="Social icons" class="innovv-social-icons-img">
+								<a href="http://www.facebook.com"><div id="facebook" class="innovv-social-icon"></div></a>
+								<a href="http://www.twitter.com"><div id="twitter" class="innovv-social-icon"></div></a>
+								<a href="http://plus.google.com"><div id="google" class="innovv-social-icon"></div></a>
+								<a href="http://www.vimeo.com"><div id="vimeo" class="innovv-social-icon"></div></a>
+								<a href="http://www.flickr.com"><div id="flickr" class="innovv-social-icon"></div></a>				
 							</div>
 						</div>					
 					</div>
@@ -285,15 +353,15 @@
 		<footer class="container margin-top-30">
 			<div class="row">
 				<div class="col-lg-12">
-					<p class="templatemo-copyright-container text-uppercase small templatemo-brown">
-						<span class="templatemo-copyright-text">Copyright &copy; 2084 <a href="#" class="templatemo-gold">Company Name</a></span>
-						<!-- <span class="templatemo-copyright-design">Design: <a href="http://www.templatemo.com" class="templatemo-gold">templatemo</a></span> -->
+					<p class="innovv-copyright-container text-uppercase small innovv-brown">
+						<span class="innovv-copyright-text">Copyright &copy; 2084 <a href="#" class="innovv-gold">Company Name</a></span>
+						<!-- <span class="innovv-copyright-design">Design: <a href="http://www.innovv.com" class="innovv-gold">innovv</a></span> -->
 					</p>
 				</div>
 			</div>		
 		</footer>	
 		<script src="js/jquery-1.11.1.min.js"></script>
 		<script src="js/jquery.jcarousel.min.js"></script>
-		<script src="js/templatemo_script.js"></script>
+		<script src="js/innovv_script.js"></script>
 	</body>
 </html>
