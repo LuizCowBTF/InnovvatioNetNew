@@ -1,12 +1,11 @@
-/*  
-
+/*
 COLOR CODES
-  Black #000000;
+  Black #000000
   Light Gray #929292
   Dark Gray #2a2a2a
   Brown #865701, rgb(134,87,1)
   Gold #b28601, rgb(178,134,1)
-
+  
 TABELA DE CONTEÚDO
   1. Estilos Universais
   2. Estilos de cabeçalho e menu
@@ -16,12 +15,12 @@ TABELA DE CONTEÚDO
   6. Modals
   7. SlideShow
   8. Media Queries
-
-  --------------------------------------*/
-
-
-  /* 1. Universal Styles
 --------------------------------------*/
+
+/* -------------------------------------
+1. Estilos Universais
+--------------------------------------*/
+
 * {
   margin: 0;
   padding: 0;
@@ -38,8 +37,8 @@ body {
 h1,
 h2,
 h3 {
-  text-transform: uppercase;
   color: #00CCFF;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -63,10 +62,6 @@ a:hover,
 a:focus {
   color: #b28601;
   text-decoration: none;
-}
-
-p {
-  color: #929292;
 }
 
 ul {
@@ -118,24 +113,24 @@ ul {
   padding: 30px;
 }
 
-.innovv-section-title {
+.section-title {
   display: block;
 }
 
-.innovv-home-image,
-.innovv-image-overlay,
-.innovv-black-bg {
+.home-image,
+.image-overlay,
+.black-bg {
   border-radius: 30px;
   width: 100%;
 }
 
-.innovv-black-bg,
-.innovv-content-box {
+.black-bg,
+.content-box {
   width: 523px;
   height: 523px;
 }
 
-.innovv-content-box {
+.content-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -156,7 +151,7 @@ ul {
   padding: 50px;
 }
 
-.innovv_content-box-about {
+.content-box-about {
   margin-top: 40px;
   width: 523px;
   height: auto;
@@ -180,7 +175,79 @@ ul {
   padding: 40px 50px 10px 50px;
 }
 
-.innovv_content-box-service {
+.content-box-service {
+  margin-top: 40px;
+  width: 523px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;  
+  padding: 40px 50px 10px 50px;
+}
+
+.content-box-product {
+  margin-top: 40px;
+  width: 523px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;  
+  padding: 40px 50px 10px 50px;
+}
+
+.content-box-contact {
+  margin-top: 40px;
+  width: 523px;
+  height: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -webkit-flex-direction:column;
+      -ms-flex-direction:column;
+          flex-direction:column;
+          -webkit-box-align: start;
+          -webkit-align-items: flex-start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;  
+  padding: 40px 50px 10px 50px;
+}
+
+.content-box-footer {
   margin-top: 40px;
   width: 523px;
   height: auto;
@@ -206,12 +273,12 @@ ul {
 
 
 /* IE fix */
-.innovv-flex-item-ie-fix,
-.innovv-content-box>* {
+.flex-item-ie-fix,
+.content-box>* {
   width: 100%;
 }
 
-.innovv-flex-center {
+.flex-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -226,49 +293,49 @@ ul {
   justify-content: center;
 }
 
-.innovv-black-bg {
+.black-bg {
   background: url('../images/round-rectangle.png') no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.innovv-brown-rectangle-bg {
+.brown-rectangle-bg {
   border: 1px solid #865701;
   border-radius: 30px;
   width: 80%;
   height: 80%;
 }
 
-.innovv-brown {
+.brown {
   color: #865701;
 }
 
-.innovv-gold {
+.gold {
   color: #b28601;
 }
 
-.innovv-btn {
+.btn {
   background: #865701;
   color: white;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.innovv-btn:hover,
-.innovv-btn:focus {
+.btn:hover,
+.btn:focus {
   background: #b28601;
   color: white;
 }
 
-.innovv-position-relative {
+.position-relative {
   position: relative;
 }
 
 /* -------------------------------------
-2. Estilos de Cabeçalho & Menu
+2. Estilos das SECTIONS cabeçalho e menu
 --------------------------------------*/
 
-.innovv-site-header {
+.site-header {
   background: url('../images/header-bg.png') repeat-x;
   border-bottom: 1px solid #865701;
   height: 82px;
@@ -280,38 +347,38 @@ ul {
   transition: all 0.3s ease;
 }
 
-.innovv-site-header.sticky {
+.site-header.sticky {
   height: 47px;
 }
 
-.innovv-site-header h1 {
+.site-header h1 {
   font-size: 60px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.innovv-site-header.sticky h1 {
+.site-header.sticky h1 {
   font-size: 34px;
 }
 
-.innovv-site-name {
+.site-name {
   font-family: Georgia, Times, serif;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 30px;
 }
 
-.innovv-site-name span {
+.site-name span {
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
 }
 
-.innovv-site-name span:first-child {
+.site-name span:first-child {
   font-size: 20px;
 }
 
-.innovv-site-header .innovv-nav {
+.site-header .nav {
   position: absolute;
   bottom: 14px;
   right: 0;
@@ -319,45 +386,47 @@ ul {
   transition: all 0.3s ease;
 }
 
-.innovv-site-header.sticky .innovv-nav {
+.site-header.sticky .nav {
   bottom: 6px;
 }
 
-.ie11 .innovv-site-header.sticky .innovv-nav,
-.ie10 .innovv-site-header.sticky .innovv-nav {
+.ie11 .site-header.sticky .nav,
+.ie10 .site-header.sticky .nav {
   bottom: 7px;
 }
 
-
+/*
+https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491
+*/
 @-moz-document url-prefix() {
-  .innovv-site-header .innovv-nav {
+  .site-header .nav {
     bottom: 16px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
-  .innovv-site-header.sticky .innovv-nav {
+  .site-header.sticky .nav {
     bottom: 8px;
   }
 }
 
-.innovv-nav ul li {
+.nav ul li {
   float: left;
   list-style: none;
 }
 
-.innovv-nav ul li a {
+.nav ul li a {
   padding: 15px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.innovv-site-header.sticky .innovv-nav ul li a {
+.site-header.sticky .nav ul li a {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.innovv-nav ul li.active a {
+.nav ul li.active a {
   background: url('../images/body-bg.png');
   border-left: 1px solid #865701;
   border-top: 1px solid #865701;
@@ -366,19 +435,19 @@ ul {
   border-top-right-radius: 15px;
 }
 
-.innovv-nav ul li a {
+.nav ul li a {
   color: #865701;
 }
 
 #responsive-menu ul li:hover a,
 #responsive-menu ul li.active a,
-.innovv-nav li:hover a,
-.innovv-nav li.active a {
+.nav li:hover a,
+.nav li.active a {
   color: #b28601;
 }
 
-.innovv-nav li:hover a,
-.innovv-nav li.active a,
+.nav li:hover a,
+.nav li.active a,
 a:focus {
   text-decoration: none;
 }
@@ -447,44 +516,45 @@ a#mobile_menu {
 }
 
 /* -------------------------------------
-3. Estilo da Home Section
+3. Estilos da SECTION Home
 --------------------------------------*/
 
 #home {
-  padding-top: 140px;
+  padding-top: 100px;
 }
 
-.innovv_home-image-container {
+.home-image-container {
   display: inline-block;
   position: relative;
 }
 
-.innovv_image-overlay {
-  background: rgba(51,51,51,0.9); /* OLD - iOS 6-, Safari 3.1-6 */
+.image-overlay {
+  background: rgba(51, 51, 51, 0.9);
+  /* OLD - iOS 6-, Safari 3.1-6 */
   cursor: pointer;
   display: -webkit-flex;
   display: -ms-flexbox;
-  display: -webkit-box;  
+  display: -webkit-box;
   display: flex;
   -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 
   -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          -webkit-box-pack: center;
-          justify-content: center;
-  
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+
   -webkit-align-items: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          -webkit-box-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+  align-items: center;
 
-  -webkit-box-orient: vertical;  
-    -webkit-box-pack: center;
-       -ms-flex-pack: center;
-    
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+
   opacity: 0;
   position: absolute;
   top: 0;
@@ -493,13 +563,13 @@ a#mobile_menu {
   height: 100%;
 }
 
-.innovv_image-overlay:hover {
+.image-overlay:hover {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-.innovv_search-icon {
+.search-icon {
   background: #865701;
   border-radius: 50%;
   font-size: 30px;
@@ -507,7 +577,7 @@ a#mobile_menu {
   margin-bottom: 15px;
 }
 
-.innovv_info-btn {
+.info-btn {
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
@@ -515,45 +585,18 @@ a#mobile_menu {
 }
 
 /* -------------------------------------
-4. Estilos da página Sobre & Serviços
+4. Estilos das SECTIONS Sobre & Serviços
 --------------------------------------*/
 
 #about {
-  padding-top: 10px;
+  padding-top: 60px;
 }
 
-.innovv_teams-box {
+.teams-box {
   margin-top: 20px;
 }
 
-.innovv_team-member-container {
-  max-width: 250px;
-  margin: 0 auto;
-}
-
-.innovv_tm-team-member-title {
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 0;
-}
-
-.innovv_member-img-container {
-  display: inline-block;
-  position: relative;
-}
-
-.innovv_img-frame {
-  position: absolute;
-}
-
-#services {
-  padding-top: 15px;
-}
-
-
-
-
-.innovv-team-member-container {
+.team-member-container {
   max-width: 250px;
   margin: 0 auto;
 }
@@ -564,36 +607,47 @@ a#mobile_menu {
   margin-bottom: 0;
 }
 
-.innovv-member-img-container {
+.member-img-container {
   display: inline-block;
   position: relative;
 }
 
-.innovv-img-frame {
+.img-frame {
   position: absolute;
 }
 
-.innovv-service-image {
+#services {
+  padding-top: 50px;
+}
+
+.service-image {
   display: block;
   float: left;
 }
 
-.innovv-service-container {
+.service-container {
   margin-top: 15px;
 }
 
-.innovv-service-content {
-  margin-left: 90px;
+.service-content {
+  margin: auto;
 }
 
-h3.innovv-service-title {
+h3.service-title {
   font-size: 14px;
   margin-bottom: 5px;
   margin-top: 0;
 }
 
-/* 5. Contact & Footer Styles
+.service-description {
+  color: #00CCFF;
+}
+
+
+/* ------------------------------------
+5. Contact & Footer Styles
 -------------------------------------*/
+
 form {
   width: 430px;
 }
@@ -609,7 +663,7 @@ form {
   border: 1px solid #b28601;
 }
 
-.innovv-send-btn {
+.send-btn {
   background: #774d01;
   color: #C5A554;
 }
@@ -633,11 +687,11 @@ form {
   color: #b28601;
 }
 
-.innovv-social-icons-img {
+.social-icons-img {
   display: none;
 }
 
-.innovv-social-icon {
+.social-icon {
   display: inline-block;
   width: 52px;
   height: 44px;
@@ -667,72 +721,58 @@ footer {
   padding-bottom: 50px;
 }
 
-.innovv-copyright-container {
+.copyright-container {
   padding-left: 30px;
 }
 
-/* 6. jCarousel http://sorgalla.com/jcarousel 
+
+/* --------------------------------------------
+6. jCarousel 
 ---------------------------------------------*/
+
 .jcarousel-wrapper {
   position: relative;
 }
 
-/*
-This is the visible area of you carousel.
-Set a width here to define how much items are visible.
-The width can be either fixed in px or flexible in %.
-Position must be relative!
-*/
 .jcarousel {
   position: relative;
   overflow: hidden;
 }
 
-.innovv-team .jcarousel {
+.team .jcarousel {
   width: 250px;
 }
 
-.innovv-products .jcarousel {
+.services .jcarousel {
   width: 275px;
 }
 
-/*
-This is the container of the carousel items.
-You must ensure that the position is relative or absolute and
-that the width is big enough to contain all items.
-*/
 .jcarousel ul {
   width: 20000em;
   position: relative;
-
-  /* Optional, required in this case since it's a <ul> element */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/*
-These are the item elements. jCarousel works best, if the items
-have a fixed width and height (but it's not required).
-*/
+
 .jcarousel li {
-  /* Required only for block elements like <li>'s */
   float: left;
 }
 
-.innovv-team .jcarousel-control-prev {
+.team .jcarousel-control-prev {
   left: 0;
 }
 
-.innovv-team .jcarousel-control-next {
+.team .jcarousel-control-next {
   right: 0;
 }
 
-.innovv-products .jcarousel-control-prev {
+.services .jcarousel-control-prev {
   left: -50px;
 }
 
-.innovv-products .jcarousel-control-next {
+.services .jcarousel-control-next {
   right: -50px;
 }
 
@@ -764,13 +804,13 @@ have a fixed width and height (but it's not required).
   box-shadow: 0 0 2px #999;
 }
 
-.innovv-team .jcarousel-control-prev,
-.innovv-team .jcarousel-control-next {
+.team .jcarousel-control-prev,
+.team .jcarousel-control-next {
   top: 55px;
 }
 
-.innovv-products .jcarousel-control-prev,
-.innovv-products .jcarousel-control-next {
+.services .jcarousel-control-prev,
+.services .jcarousel-control-next {
   top: 110px;
 }
 
@@ -781,7 +821,11 @@ have a fixed width and height (but it's not required).
   color: #865701;
 }
 
-.innovv-product-img {
+.product-img {
+  margin-top: 30px;
+}
+
+.product-img {
   margin-top: 30px;
 }
 
@@ -789,44 +833,44 @@ have a fixed width and height (but it's not required).
 --------------------------------------*/
 @media screen and (max-width: 1199px) {
 
-  .innovv-black-bg,
-  .innovv-content-box {
+  .black-bg,
+  .content-box {
     width: 480px;
     height: 523px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .innovv-site-header {
+  .site-header {
     height: 48px;
   }
 
-  .innovv-site-header h1 {
+  .site-header h1 {
     font-size: 35px;
   }
 
-  .innovv-site-header .innovv-nav {
+  .site-header .nav {
     right: 10px;
     bottom: 8px;
   }
 
   /*https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491*/
   @-moz-document url-prefix() {
-    .innovv-site-header .innovv-nav {
+    .site-header .nav {
       bottom: 11px;
     }
   }
 
-  .ie11 .innovv-site-header .innovv-nav,
-  .ie10 .innovv-site-header .innovv-nav {
+  .ie11 .site-header .nav,
+  .ie10 .site-header .nav {
     bottom: 9px;
   }
 
-  .ie11 .innovv-site-header.sticky .innovv-nav {
+  .ie11 .site-header.sticky .nav {
     bottom: 7px;
   }
 
-  .innovv-nav ul li a {
+  .nav ul li a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -835,28 +879,28 @@ have a fixed width and height (but it's not required).
     padding-top: 100px;
   }
 
-  .innovv-black-bg,
-  .innovv-content-box {
+  .black-bg,
+  .content-box {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .innovv-content-box {
+  .content-box {
     height: auto;
     padding: 15px;
   }
 
-  .innovv-section {
+  .section {
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .innovv-site-header {
+  .site-header {
     position: static;
   }
 
-  .innovv-nav {
+  .nav {
     bottom: -6px;
   }
 
@@ -864,70 +908,70 @@ have a fixed width and height (but it's not required).
     padding-top: 30px;
   }
 
-  .innovv-black-bg,
-  .innovv-content-box {
+  .black-bg,
+  .content-box {
     width: 98%;
     height: auto;
   }
 
-  .innovv-black-bg {
+  .black-bg {
     background: #1B1B1B;
     border: 1px solid #865701;
     border-radius: 30px;
     padding: 30px;
   }
 
-  .innovv-brown-rectangle-bg {
+  .brown-rectangle-bg {
     width: 100%;
     padding: 30px;
   }
 
-  .innovv-second-box {
+  .second-box {
     margin-top: 50px;
   }
 
-  .innovv-service-container>* {
+  .service-container>* {
     text-align: center;
   }
 
-  .innovv-service-image {
+  .service-image {
     float: none;
     margin: 20px auto 10px auto;
   }
 
-  .innovv-service-content {
+  .service-content {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .innovv-copyright-container {
+  .copyright-container {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .innovv-black-bg {
+  .black-bg {
     padding: 15px;
   }
 
-  .innovv-brown-rectangle-bg {
+  .brown-rectangle-bg {
     padding: 5px;
   }
 
-  .innovv-products .jcarousel-control-prev {
+  .products .jcarousel-control-prev {
     left: 0;
   }
 
-  .innovv-products .jcarousel-control-next {
+  .products .jcarousel-control-next {
     right: 0;
   }
 
-  .innovv-product-container {
+  .product-container {
     padding-top: 8px;
     padding-bottom: 8px;
   }
 
-  .innovv-product-img {
+  .product-img {
     margin-top: 20px;
     width: 75%;
   }
