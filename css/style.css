@@ -36,7 +36,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   color: #00CCFF;
   text-transform: uppercase;
 }
@@ -54,9 +55,14 @@ h3 {
   margin-top: 0;
 }
 
-input[type="checkbox"] {
-  display: none;
+h4 {
+  color: #00CCFF;
+  font-size: 15px;
+  font-weight: 300;
+  margin-top: 0;
 }
+
+
 
 a:hover,
 a:focus {
@@ -64,14 +70,32 @@ a:focus {
   text-decoration: none;
 }
 
+p {
+  color: #00CCFF;
+  font-weight: bolder;
+}
+
 ul {
   margin: 0;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.row2 {
+  margin: 50px 0;
+  
 }
 
 .dark {
   background-color: #000000;
   color: #00CCFF;
   font-weight: 100;
+  p {
+    color: #000000;
+    font-weight: bolder;
+  }
 }
 
 .btnTheme {
@@ -82,6 +106,7 @@ ul {
   font-size: 14px;
   cursor: pointer;
 }
+
 
 .blue {
   color: #6BE;
@@ -113,24 +138,24 @@ ul {
   padding: 30px;
 }
 
-.section-title {
+.templatemo-section-title {
   display: block;
 }
 
-.home-image,
-.image-overlay,
-.black-bg {
+.templatemo-home-image,
+.templatemo-image-overlay,
+.templatemo-black-bg {
   border-radius: 30px;
   width: 100%;
 }
 
-.black-bg,
-.content-box {
+.templatemo-black-bg,
+.templatemo-content-box {
   width: 523px;
   height: 523px;
 }
 
-.content-box {
+.templatemo-content-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -151,134 +176,14 @@ ul {
   padding: 50px;
 }
 
-.content-box-about {
-  margin-top: 40px;
-  width: 523px;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;  
-  padding: 40px 50px 10px 50px;
-}
-
-.content-box-service {
-  margin-top: 40px;
-  width: 523px;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;  
-  padding: 40px 50px 10px 50px;
-}
-
-.content-box-product {
-  margin-top: 40px;
-  width: 523px;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;  
-  padding: 40px 50px 10px 50px;
-}
-
-.content-box-contact {
-  margin-top: 40px;
-  width: 523px;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;  
-  padding: 40px 50px 10px 50px;
-}
-
-.content-box-footer {
-  margin-top: 40px;
-  width: 523px;
-  height: auto;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient:vertical;
-  -webkit-box-direction:normal;
-  -webkit-flex-direction:column;
-      -ms-flex-direction:column;
-          flex-direction:column;
-          -webkit-box-align: start;
-          -webkit-align-items: flex-start;
-              -ms-flex-align: start;
-                  align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;  
-  padding: 40px 50px 10px 50px;
-}
-
 
 /* IE fix */
-.flex-item-ie-fix,
-.content-box>* {
+.templatemo-flex-item-ie-fix,
+.templatemo-content-box>* {
   width: 100%;
 }
 
-.flex-center {
+.templatemo-flex-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -293,41 +198,41 @@ ul {
   justify-content: center;
 }
 
-.black-bg {
+.templatemo-black-bg {
   background: url('../images/round-rectangle.png') no-repeat;
   background-position: center;
   background-size: contain;
 }
 
-.brown-rectangle-bg {
+.templatemo-brown-rectangle-bg {
   border: 1px solid #865701;
   border-radius: 30px;
   width: 80%;
   height: 80%;
 }
 
-.brown {
+.templatemo-brown {
   color: #865701;
 }
 
-.gold {
+.templatemo-gold {
   color: #b28601;
 }
 
-.btn {
+.templatemo-btn {
   background: #865701;
   color: white;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.btn:hover,
-.btn:focus {
+.templatemo-btn:hover,
+.templatemo-btn:focus {
   background: #b28601;
   color: white;
 }
 
-.position-relative {
+.templatemo-position-relative {
   position: relative;
 }
 
@@ -335,7 +240,7 @@ ul {
 2. Estilos das SECTIONS cabeçalho e menu
 --------------------------------------*/
 
-.site-header {
+.templatemo-site-header {
   background: url('../images/header-bg.png') repeat-x;
   border-bottom: 1px solid #865701;
   height: 82px;
@@ -347,38 +252,33 @@ ul {
   transition: all 0.3s ease;
 }
 
-.site-header.sticky {
+.templatemo-site-header.sticky {
   height: 47px;
 }
 
-.site-header h1 {
+.templatemo-site-header h1 {
   font-size: 60px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.site-header.sticky h1 {
+.templatemo-site-header.sticky h1 {
   font-size: 34px;
 }
 
-.site-name {
-  font-family: Georgia, Times, serif;
+.templatemo-site-name {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 30px;
 }
 
-.site-name span {
-  display: inline-block;
-  vertical-align: middle;
-  line-height: normal;
+.templatemo-site-name img {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
-.site-name span:first-child {
-  font-size: 20px;
-}
-
-.site-header .nav {
+.templatemo-site-header .templatemo-nav {
   position: absolute;
   bottom: 14px;
   right: 0;
@@ -386,12 +286,12 @@ ul {
   transition: all 0.3s ease;
 }
 
-.site-header.sticky .nav {
+.templatemo-site-header.sticky .templatemo-nav {
   bottom: 6px;
 }
 
-.ie11 .site-header.sticky .nav,
-.ie10 .site-header.sticky .nav {
+.ie11 .templatemo-site-header.sticky .templatemo-nav,
+.ie10 .templatemo-site-header.sticky .templatemo-nav {
   bottom: 7px;
 }
 
@@ -399,34 +299,34 @@ ul {
 https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491
 */
 @-moz-document url-prefix() {
-  .site-header .nav {
+  .templatemo-site-header .templatemo-nav {
     bottom: 16px;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
-  .site-header.sticky .nav {
+  .templatemo-site-header.sticky .templatemo-nav {
     bottom: 8px;
   }
 }
 
-.nav ul li {
+.templatemo-nav ul li {
   float: left;
   list-style: none;
 }
 
-.nav ul li a {
+.templatemo-nav ul li a {
   padding: 15px 20px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.site-header.sticky .nav ul li a {
+.templatemo-site-header.sticky .templatemo-nav ul li a {
   padding-top: 8px;
   padding-bottom: 8px;
 }
 
-.nav ul li.active a {
+.templatemo-nav ul li.active a {
   background: url('../images/body-bg.png');
   border-left: 1px solid #865701;
   border-top: 1px solid #865701;
@@ -435,19 +335,19 @@ https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/95349
   border-top-right-radius: 15px;
 }
 
-.nav ul li a {
+.templatemo-nav ul li a {
   color: #865701;
 }
 
 #responsive-menu ul li:hover a,
 #responsive-menu ul li.active a,
-.nav li:hover a,
-.nav li.active a {
+.templatemo-nav li:hover a,
+.templatemo-nav li.active a {
   color: #b28601;
 }
 
-.nav li:hover a,
-.nav li.active a,
+.templatemo-nav li:hover a,
+.templatemo-nav li.active a,
 a:focus {
   text-decoration: none;
 }
@@ -521,14 +421,15 @@ a#mobile_menu {
 
 #home {
   padding-top: 100px;
+  padding-bottom: 50px;
 }
 
-.home-image-container {
+.templatemo-home-image-container {
   display: inline-block;
   position: relative;
 }
 
-.image-overlay {
+.templatemo-image-overlay {
   background: rgba(51, 51, 51, 0.9);
   /* OLD - iOS 6-, Safari 3.1-6 */
   cursor: pointer;
@@ -563,13 +464,13 @@ a#mobile_menu {
   height: 100%;
 }
 
-.image-overlay:hover {
+.templatemo-image-overlay:hover {
   opacity: 1;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
-.search-icon {
+.templatemo-search-icon {
   background: #865701;
   border-radius: 50%;
   font-size: 30px;
@@ -577,26 +478,29 @@ a#mobile_menu {
   margin-bottom: 15px;
 }
 
-.info-btn {
+.templatemo-info-btn {
   margin-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
   max-width: 150px;
 }
 
+
 /* -------------------------------------
 4. Estilos das SECTIONS Sobre & Serviços
 --------------------------------------*/
 
 #about {
-  padding-top: 60px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.teams-box {
-  margin-top: 20px;
+#products {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.team-member-container {
+.templatemo-team-member-container {
   max-width: 250px;
   margin: 0 auto;
 }
@@ -607,40 +511,32 @@ a#mobile_menu {
   margin-bottom: 0;
 }
 
-.member-img-container {
+.templatemo-member-img-container {
   display: inline-block;
   position: relative;
 }
 
-.img-frame {
+.templatemo-img-frame {
   position: absolute;
 }
 
-#services {
-  padding-top: 50px;
-}
-
-.service-image {
+.templatemo-service-image {
   display: block;
   float: left;
 }
 
-.service-container {
+.templatemo-service-container {
   margin-top: 15px;
 }
 
-.service-content {
-  margin: auto;
+.templatemo-service-content {
+  margin-left: auto;
 }
 
-h3.service-title {
-  font-size: 14px;
+h3.templatemo-service-title {
+  font-size: 13px;
   margin-bottom: 5px;
   margin-top: 0;
-}
-
-.service-description {
-  color: #00CCFF;
 }
 
 
@@ -663,7 +559,7 @@ form {
   border: 1px solid #b28601;
 }
 
-.send-btn {
+.templatemo-send-btn {
   background: #774d01;
   color: #C5A554;
 }
@@ -687,11 +583,11 @@ form {
   color: #b28601;
 }
 
-.social-icons-img {
+.templatemo-social-icons-img {
   display: none;
 }
 
-.social-icon {
+.templatemo-social-icon {
   display: inline-block;
   width: 52px;
   height: 44px;
@@ -721,58 +617,72 @@ footer {
   padding-bottom: 50px;
 }
 
-.copyright-container {
+.templatemo-copyright-container {
   padding-left: 30px;
 }
 
-
-/* --------------------------------------------
-6. jCarousel 
+/* 6. jCarousel http://sorgalla.com/jcarousel 
 ---------------------------------------------*/
-
 .jcarousel-wrapper {
   position: relative;
 }
 
+/*
+This is the visible area of you carousel.
+Set a width here to define how much items are visible.
+The width can be either fixed in px or flexible in %.
+Position must be relative!
+*/
 .jcarousel {
   position: relative;
   overflow: hidden;
 }
 
-.team .jcarousel {
+.templatemo-team .jcarousel {
   width: 250px;
 }
 
-.services .jcarousel {
+.templatemo-products .jcarousel {
   width: 275px;
 }
 
+/*
+This is the container of the carousel items.
+You must ensure that the position is relative or absolute and
+that the width is big enough to contain all items.
+*/
 .jcarousel ul {
   width: 20000em;
   position: relative;
+
+  /* Optional, required in this case since it's a <ul> element */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-
+/*
+These are the item elements. jCarousel works best, if the items
+have a fixed width and height (but it's not required).
+*/
 .jcarousel li {
+  /* Required only for block elements like <li>'s */
   float: left;
 }
 
-.team .jcarousel-control-prev {
+.templatemo-team .jcarousel-control-prev {
   left: 0;
 }
 
-.team .jcarousel-control-next {
+.templatemo-team .jcarousel-control-next {
   right: 0;
 }
 
-.services .jcarousel-control-prev {
+.templatemo-products .jcarousel-control-prev {
   left: -50px;
 }
 
-.services .jcarousel-control-next {
+.templatemo-products .jcarousel-control-next {
   right: -50px;
 }
 
@@ -804,13 +714,13 @@ footer {
   box-shadow: 0 0 2px #999;
 }
 
-.team .jcarousel-control-prev,
-.team .jcarousel-control-next {
+.templatemo-team .jcarousel-control-prev,
+.templatemo-team .jcarousel-control-next {
   top: 55px;
 }
 
-.services .jcarousel-control-prev,
-.services .jcarousel-control-next {
+.templatemo-products .jcarousel-control-prev,
+.templatemo-products .jcarousel-control-next {
   top: 110px;
 }
 
@@ -821,11 +731,7 @@ footer {
   color: #865701;
 }
 
-.product-img {
-  margin-top: 30px;
-}
-
-.product-img {
+.templatemo-product-img {
   margin-top: 30px;
 }
 
@@ -833,44 +739,44 @@ footer {
 --------------------------------------*/
 @media screen and (max-width: 1199px) {
 
-  .black-bg,
-  .content-box {
+  .templatemo-black-bg,
+  .templatemo-content-box {
     width: 480px;
     height: 523px;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .site-header {
+  .templatemo-site-header {
     height: 48px;
   }
 
-  .site-header h1 {
+  .templatemo-site-header h1 {
     font-size: 35px;
   }
 
-  .site-header .nav {
+  .templatemo-site-header .templatemo-nav {
     right: 10px;
     bottom: 8px;
   }
 
   /*https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491*/
   @-moz-document url-prefix() {
-    .site-header .nav {
+    .templatemo-site-header .templatemo-nav {
       bottom: 11px;
     }
   }
 
-  .ie11 .site-header .nav,
-  .ie10 .site-header .nav {
+  .ie11 .templatemo-site-header .templatemo-nav,
+  .ie10 .templatemo-site-header .templatemo-nav {
     bottom: 9px;
   }
 
-  .ie11 .site-header.sticky .nav {
+  .ie11 .templatemo-site-header.sticky .templatemo-nav {
     bottom: 7px;
   }
 
-  .nav ul li a {
+  .templatemo-nav ul li a {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -879,28 +785,36 @@ footer {
     padding-top: 100px;
   }
 
-  .black-bg,
-  .content-box {
+  #about {
+    padding-top: 100px;
+  }
+
+  #services {
+    padding-top: 100px;
+  }
+
+  .templatemo-black-bg,
+  .templatemo-content-box {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .content-box {
+  .templatemo-content-box {
     height: auto;
     padding: 15px;
   }
 
-  .section {
+  .templatemo-section {
     margin-top: 50px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .site-header {
+  .templatemo-site-header {
     position: static;
   }
 
-  .nav {
+  .templatemo-nav {
     bottom: -6px;
   }
 
@@ -908,70 +822,78 @@ footer {
     padding-top: 30px;
   }
 
-  .black-bg,
-  .content-box {
+  #about {
+    padding-top: 30px;
+  }
+
+  #services {
+    padding-top: 30px;
+  }
+
+  .templatemo-black-bg,
+  .templatemo-content-box {
     width: 98%;
     height: auto;
   }
 
-  .black-bg {
+  .templatemo-black-bg {
     background: #1B1B1B;
     border: 1px solid #865701;
     border-radius: 30px;
     padding: 30px;
   }
 
-  .brown-rectangle-bg {
+  .templatemo-brown-rectangle-bg {
     width: 100%;
     padding: 30px;
   }
 
-  .second-box {
+  .templatemo-second-box {
     margin-top: 50px;
   }
 
-  .service-container>* {
+  .templatemo-service-container>* {
     text-align: center;
   }
 
-  .service-image {
+  .templatemo-service-image {
     float: none;
     margin: 20px auto 10px auto;
   }
 
-  .service-content {
+  .templatemo-service-content {
     margin-left: auto;
     margin-right: auto;
   }
 
-  .copyright-container {
+  .templatemo-copyright-container {
     padding-left: 0;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .black-bg {
+  .templatemo-black-bg {
     padding: 15px;
   }
 
-  .brown-rectangle-bg {
+  .templatemo-brown-rectangle-bg {
     padding: 5px;
   }
 
-  .products .jcarousel-control-prev {
+  .templatemo-products .jcarousel-control-prev {
     left: 0;
   }
 
-  .products .jcarousel-control-next {
+  .templatemo-products .jcarousel-control-next {
     right: 0;
   }
 
-  .product-container {
+  .templatemo-product-container {
     padding-top: 8px;
     padding-bottom: 8px;
   }
 
-  .product-img {
+  .templatemo-product-img {
     margin-top: 20px;
     width: 75%;
   }
