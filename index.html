@@ -1,625 +1,794 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<title>Innovvatio</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="
-			Mobile Developer, Developer,
-			Banco de Dados, Gerenciamento de Dados, Sistemas de Banco de Dados, SQL, NoSQL, Armazenamento de Dados, Análise de Dados, Big Data, Consultoria em Banco de Dados,
-			Otimização de Desempenho, Controle de Estoque, Gestão de Inventário, Rastreamento de Produtos, Estoque em Tempo Real, Otimização de Estoque,
-			UI, UX, Design de Interface de Usuário, Experiência do Usuário, Design Centrado no Usuário, Usabilidade,
-			IoT, Internet das Coisas, Sensores Conectados, Dispositivos Inteligentes, Conectividade IoT,
-			Machine Learning, Aprendizado de Máquina, Análise de Dados, Otimização de Vendas, Personalização de Marketing,
-			Desenvolvimento Mobile, Aplicativos Android, Android App Development, Desenvolvedores Android,
-			Automação de Processos, Eficiência Operacional, Automação de Fluxo de Trabalho, Automação de Tarefas, Automação Empresarial,
-			Android Compatible Web template, Smartphone Compatible web template, Mobile Web Design,
-			Web Developer, Front End Developer, Modelos de Web Responsivo, Modelos de Web de Inicialização, Modelos de Web Plana," />
-		<link rel="shortcut icon" type="images/ico" href="images/favicon.ico" />
-		<link rel="stylesheet" type="text/css"
-			href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
-		<link rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-		<link href="css/font-awesome.min.css" rel="stylesheet">
-		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-	</head>
-	<body class="dark">
-		<nav id="responsive-menu">
-			<ul class="menu-holder">
-				<li class="active"><a href="#home"><i class="fa fa-home"></i>Início</a></li>
-				<li><a href="#about"><i class="fa fa-institution"></i>Somos</a></li>
-				<li><a href="#products"><i class="fa fa-cogs"></i>Serviços</a></li>
-				<li><a href="#projetos"><i class="fa fa-trophy"></i>Projetos</a></li>
-				<li><a href="#contact"><i class="fa fa-envelope"></i>Contatos</a></li>
 
-			</ul>
-		</nav>
-		<div class="templatemo-site-header">
-			<div class="container">
-				<div class="row templatemo-position-relative">
-					<nav class="hidden-xs text-uppercase templatemo-nav">
-						<ul class="menu-holder">
-							<li class="active"><a href="#home">Início</a></li>
-							<li><a href="#about">Somos</a></li>
-							<li><a href="#products">Serviços</a></li>
-							<li><a href="#projects">Projetos</a></li>
-							<li><a href="#contact">Contatos</a></li>
-							<li>
-								<input type="checkbox" name="change-theme" id="change-theme" />
-								<label for="change-theme">
-									<button class="btnTheme" onclick="changeTheme(this)">
-										<i onclick="changeBtn(this)" class="fa fa-sun-o"></i>
-									</button>
-								</label>
-							</li>
-						</ul>
-					</nav>
-					<h1 class="templatemo-site-name">
-						<img src="images/logoInnovvatio.png" alt="Innovvatio" />
-					</h1>
-					<div class="text-right visible-xs">
-						<a href="#" id="mobile_menu"><span class="fa fa-bars"></span></a>
-					</div>
+<head>
+	<title>Innovvatio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords"
+		content="
+				Mobile Developer, Developer,
+				Banco de Dados, Gerenciamento de Dados, Sistemas de Banco de Dados, SQL, NoSQL, Armazenamento de Dados, Análise de Dados, Big Data, Consultoria em Banco de Dados,
+				Otimização de Desempenho, Controle de Estoque, Gestão de Inventário, Rastreamento de Produtos, Estoque em Tempo Real, Otimização de Estoque,
+				UI, UX, Design de Interface de Usuário, Experiência do Usuário, Design Centrado no Usuário, Usabilidade,
+				IoT, Internet das Coisas, Sensores Conectados, Dispositivos Inteligentes, Conectividade IoT,
+				Machine Learning, Aprendizado de Máquina, Análise de Dados, Otimização de Vendas, Personalização de Marketing,
+				Desenvolvimento Mobile, Aplicativos Android, Android App Development, Desenvolvedores Android,
+				Automação de Processos, Eficiência Operacional, Automação de Fluxo de Trabalho, Automação de Tarefas, Automação Empresarial,
+				Android Compatible Web template, Smartphone Compatible web template, Mobile Web Design,
+				Web Developer, Front End Developer, Modelos de Web Responsivo, Modelos de Web de Inicialização, Modelos de Web Plana," />
+	<link rel="shortcut icon" type="images/ico" href="images/favicon.ico" />
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" />
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/charts.min.css" />
+</head>
+
+<body class="dark">
+	<nav id="responsive-menu">
+		<ul class="menu-holder">
+			<li class="active"><a href="#home"><i class="fa fa-home"></i>Início</a></li>
+			<li><a href="#about"><i class="fa fa-briefcase"></i>Somos</a></li>
+			<li><a href="#products"><i class="fa fa-list"></i>Serviços</a></li>
+			<li><a href="#projects"><i class="fa fa-dashboard"></i>Projetos</a></li>
+			<li><a href="#contact"><i class="fa fa-envelope"></i>Contatos</a></li>
+		</ul>
+	</nav>
+	<div class="templatemo-site-header">
+		<div class="container">
+			<div class="row templatemo-position-relative">
+				<nav class="hidden-xs text-uppercase templatemo-nav">
+					<ul class="menu-holder">
+						<li class="active"><a href="#home">Início</a></li>
+						<li><a href="#about">Somos</a></li>
+						<li><a href="#products">Serviços</a></li>
+						<li><a href="#projects">Projetos</a></li>
+						<li><a href="#contact">Contatos</a></li>
+						<li>
+							<input type="checkbox" name="change-theme" id="change-theme" />
+							<label for="change-theme">
+								<button class="btnTheme" onclick="changeTheme(this)">
+									<i onclick="changeBtn(this)" class="fa fa-sun-o"></i>
+								</button>
+							</label>
+						</li>
+					</ul>
+				</nav>
+				<h1 class="templatemo-site-name">
+					<img src="images/logoInnovvatio.png" alt="Innovvatio" />
+				</h1>
+				<div class="text-right visible-xs">
+					<a href="#" id="mobile_menu"><span class="fa fa-bars"></span></a>
 				</div>
 			</div>
 		</div>
-		<section id="home" class="templatemo-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6 templatemo-position-relative">
-						<div class="templatemo-flex-center templatemo-black-bg text-center">
-							<div class="templatemo-home-image-container">
-								<img src="images/innovacao.png" alt="Home" class="templatemo-home-image">
-								<div class="templatemo-image-overlay">
-									<p class="text-uppercase templatemo-gold">Innovvatio</p>
-									<p class="text-uppercase">Uma empresa femiliar</p>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">uma empresa familiar</h2>
-							<h3 class="templatemo-gold">duas gerações, pai e filho na vanguarda da
-								tecnologia</h3>
-							<p class="margin-top-30">
-								Há mais de trinta e cinco anos o fundador e patriarca iniciava na área,
-								e que desde então apresenta inovações em serviços de tecnologia.
-								Agora, seu sucessor e filho entra com a garra da juventude para
-								apresentar mais inovações em serviços.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="about" class="templatemo-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box text-right">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">Nossa</span>
-								<span class="templatemo-section-title"><strong>Família </strong>e
-									<strong>Valores</strong></span>
-							</h2>
-							<p class="margin-top-15">
-								Tendo como seu primeiro emprego uma vaga na área de informática,
-								apaixonou-se pelo trabalho e nunca mais fez outra coisa na vida.
-								E nessa trajetória, já se vão mais de trinta e cinco anos de dedicação.
-							</p>
-							<p>
-								Com apenas dezenove anos, já chega apresentando o melhir do presente e
-								futuro em conhecimentos. Python, Iot, Realidade Aumentada e mais o que a
-								tecnologia.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="jcarousel-wrapper templatemo-team">
-									<div class="jcarousel">
-										<ul>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-1.png" alt="Team Member 1" class="tm-team-member-img">
-													</div>								        		
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">luiz claudio</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15 img-responsive center-block">
-													<p class="margin-top-15">Análise e Desenvolvimento de Sistemas e Engenharia da Computação</p>
-													<p class="templatemo-brown text-uppercase">pai</p>
-												</div>
-											</li>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-2.png" alt="Team Member 2" class="img-circle tm-team-member-img">
-													</div>
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">fábio gomes</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15">
-													<p class="margin-top-15">Engenharia da Computação e Análise de Dados</p>
-													<p class="templatemo-brown text-uppercase">filho</p>
-												</div>							        	
-											</li>
-											<li>
-												<div class="text-center templatemo-team-member-container">
-													<div class="templatemo-member-img-container">
-														<img src="images/team-img-frame.png" alt="Team img frame" class="templatemo-img-frame">
-														<img src="images/team-member-3.png" alt="Team Member 3" class="img-circle tm-team-member-img">
-													</div>
-													<h3 class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">Rosi Mattos</h3>
-													<img src="images/underline.png" alt="Underline" class="margin-top-15">
-													<p class="margin-top-15">Administrativo e Redes Sociais</p>
-													<p class="templatemo-brown text-uppercase">equipe</p>
-												</div>							        	
-											</li>
-										</ul>
-									</div>
-									<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
-									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
-								</div>
-							</div>						
-						</div>
-					</div>
-				</div>
-				<div class="row row2">
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<div class="templatemo-flex-center templatemo-black-bg text-center">
-								<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-									<div class="templatemo-flex-item-ie-fix padding-15">
-										<h2 class="templatemo-gold">Nossos Valores</h2>
-										<div class="template-justify"></div>
-										<div class="templatemo-service-container margin-top-15">
-											<div class="templatemo-service-content text-center">
-												<h3 class="templatemo-service-title templatemo-brown">respitar as pessoas</h3>
-												<p class="templatemo-service-description">
-													Valorizamos o capital humano como o mais importante ativo de nossos
-													clientes. Respeitando a diversidade e não fazendo distinção de ninguem.
-												</p>
-											</div>
-										</div>
-										<div class="templatemo-service-container">
-											<div class="templatemo-service-content text-center">
-												<h3 class="templatemo-service-title templatemo-brown">ética</h3>
-												<p class="templatemo-service-description">
-													Nossa empresa é familiar e feita por pessoas integras.
-													Sempre respeitando aos preceitos de condutas corretas e unindo
-													forças em prol dos melhores resultados e relacionamentos com nossos
-													parceiros.
-												</p>
-											</div>
-										</div>
-										<div class="templatemo-service-container">
-											<div class="templatemo-service-content text-center">
-												<h3 class="templatemo-service-title templatemo-brown">determinação em inovação</h3>
-												<p class="templatemo-service-description">
-													Somos focados em resultados, comprometidos com qualidade de tudo
-													que entregamos. Somos perseverantes e mesmo diante das dificuldades somos criativos
-													para inovar.
-												</p>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">negócios diferentes,</h2>
-							<h3 class="templatemo-gold">metas e objetivos diferentes, levam a visões diferentes.</h3>
-							<p class="margin-top-30">
-								Como a empresa é um ser vivo e mutável, a missão pode ser revista ao longo do tempo, se adequando às novas necessidades do mercado.
-								É fundamental que todos os integrantes da organização saibam qual o seu propósito (missão) para que, nas suas funções do dia a dia, tomem decisões adequadas a ele e promovam a entrega correta ao cliente e demais stakeholders.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--
-		<section id="services" class="templatemo-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg text-center">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="templatemo-flex-item-ie-fix padding-30">
-									<h2 class="templatemo-gold">Our Plans</h2>
-									<div class="templatemo-service-container margin-top-15">
-										<img src="images/plan-1.png" alt="Plan 1"
-											class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">duis sed odio
-												sit amet</h3>
-											<p class="templatemo-service-description">Aenean sollicitudin, lorem
-												quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-												nibh id elit.</p>
-										</div>
-									</div>
-									<div class="templatemo-service-container">
-										<img src="images/plan-2.png" alt="Plan 2"
-											class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">sagittis sem
-												nibhd</h3>
-											<p class="templatemo-service-description">Morbi accumsan ipsum velit.
-												Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris
-												vitae erat.</p>
-										</div>
-									</div>
-									<div class="templatemo-service-container">
-										<img src="images/plan-3.png" alt="Plan 3"
-											class="templatemo-service-image">
-										<div class="templatemo-service-content text-left">
-											<h3 class="templatemo-service-title templatemo-brown">duis sed odio
-												sit amet</h3>
-											<p class="templatemo-service-description">Aenean sollicitudin, lorem
-												quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem
-												nibh id elit.</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">Powerful</span>
-								<span class="templatemo-section-title">Creative <span
-										class="templatemo-gold"><strong>Design</strong></span></span>
-							</h2>
-							<p class="margin-top-30">Proin gravida nibh vel velit auctor aliquet.
-								Aenean sollicitudinl
-								dorem quis bibendum auctor, nisi elit consequat ipsum, nec sagit. tis</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		-->
-		<section id="products" class="templatemo-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box text-right">
-							<h2 class="templatemo-brown">
-								<span class="templatemo-section-title">Poderoso</span>
-								<span class="section-title">Senso de <span class="gold"><strong>Inovação</strong></span></span>
-							</h2>
-							<p class="margin-top-30">
-								Incentivamos novas ideias a fim de encontrar as melhores oprtunidades e
-								soluções aos nossos parceiros.
-							</p>
-							<p>
-								Proporcionar uma única e marcante experiência através de tecnologias
-								ímpares é o que move o nosso processo criativo e nos permite entregar
-								serviços com qualidade aos nossos parceiros.
-							</p>
-							<p>
-								O ato de se desenvolver resulta na ação de estar apto para o próximo
-								passo, direção ou etapa superior a que se encontra na fase atual.
-							</p>
-							<p>
-								Significa em um enfoque diferenciado para produtos, serviço e ambientes
-								usados por sistemas de grande complexidade.
-							</p>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
-								<div class="jcarousel-wrapper templatemo-products text-center">
-									<h3 class="innovv_gold">Nossos Serviços</h3>
-									<div class="jcarousel">
-										<ul>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-01">	
-														<h4 class="templatemo-gold">Gerenciamento de<br>Banco de Dados</h4>
-													</a>
-													<img src="images/product-1.png" alt="Product 1" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-02">
-														<h4 class="templatemo-gold">Sistema para<br>Controle de Estoque</h4>
-													</a>
-													<img src="images/product-2.png" alt="Product 2" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-03">
-														<h4 class="templatemo-gold">User Interface<br>User Experience</h4>
-													</a>
-													<img src="images/product-3.png" alt="Product 3" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-04">
-														<h4 class="templatemo-gold">Aplicações IoT<br>Internet das Coisas</h4>
-													</a>
-													<img src="images/product-4.png" alt="Product 4" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-05">
-														<h4 class="templatemo-gold">Machine<br>Learning Aplicado</h4>
-													</a>
-													<img src="images/product-5.png" alt="Product 5" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-06">
-														<h4 class="templatemo-gold">Desenvolvimento<br>Mobile Android</h4>
-													</a>
-													<img src="images/product-6.png" alt="Product 6" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-07">
-														<h4 class="templatemo-gold">Automação<br> de Processos</h4>
-													</a>
-													<img src="images/product-7.png" alt="Product 7" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-08">
-														<h4 class="templatemo-gold">Análise de<br>Bancos de Dados<br></h4>
-													</a>
-													<img src="images/product-8.png" alt="Product 8" class="templatemo-product-img">
-												</div>
-											</li>
-											<li>
-												<div class="templatemo-product-container text-center">
-													<a href="#modalService-09">
-														<h4 class="templatemo-gold">Desenvolvimento<br> de Sites</h4>
-													</a>
-													<img src="images/product-9.png" alt="Product 9" class="templatemo-product-img">
-												</div>
-											</li>
-										</ul>
-									</div>
-									<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
-									<a href="#" class="jcarousel-control-next">&rsaquo;</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section id="contact" class="templatemo-section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-flex-center templatemo-black-bg">
-							<form action="#" method="post">
-								<div class="tm-contact-form">
-									<div class="form-group">
-										<input type="text" id="contact_name" class="form-control"
-											placeholder="Name..." />
-									</div>
-									<div class="form-group">
-										<input type="email" id="contact_email" class="form-control"
-											placeholder="Email..." />
-									</div>
-									<div class="form-group">
-										<input type="text" id="contact_subject" class="form-control"
-											placeholder="Subject..." />
-									</div>
-									<div class="form-group">
-										<textarea id="contact_message" class="form-control" rows="8"
-											placeholder="Message..."></textarea>
-									</div>
-								</div>
-								<button type="submit"
-									class="btn text-uppercase templatemo-btn templatemo-send-btn">Send</button>
-							</form>
-						</div>
-					</div>
-					<div class="col-lg-6 col-md-6">
-						<div class="templatemo-content-box templatemo-second-box">
-							<h2 class="templatemo-brown">Entre em <span class="templatemo-gold">Contato Conosco</span></h2>
-							<p class="margin-top-30">
-								Ainda precisa de ajuda? Entre em contato com a gente por meio do formulário ao lado.
-							</p>
-							<div>
-								<img src="images/social-icons.png" alt="Social icons"
-									class="templatemo-social-icons-img">
-								<a href="http://www.facebook.com"><div id="facebook"
-										class="templatemo-social-icon"></div></a>
-								<a href="http://www.twitter.com"><div id="twitter"
-										class="templatemo-social-icon"></div></a>
-								<a href="http://plus.google.com"><div id="google"
-										class="templatemo-social-icon"></div></a>
-								<a href="http://www.vimeo.com"><div id="vimeo"
-										class="templatemo-social-icon"></div></a>
-								<a href="http://www.flickr.com"><div id="flickr"
-										class="templatemo-social-icon"></div></a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<footer class="container margin-top-30">
+	</div>
+	<section id="home" class="templatemo-section">
+		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<p
-						class="templatemo-copyright-container text-uppercase small templatemo-brown">
-						<span class="templatemo-copyright-text">Copyright &copy; 2023 <a href="#"
-								class="templatemo-gold">Innovvatio I. T. Ltda.</a></span>
-						<!-- <span class="templatemo-copyright-design">Design: <a href="http://www.templatemo.com" class="templatemo-gold">templatemo</a></span> -->
-					</p>
+				<div class="col-lg-6 col-md-6 templatemo-position-relative">
+					<div class="templatemo-flex-center templatemo-black-bg text-center">
+						<div class="templatemo-home-image-container">
+							<img src="images/innovacao.png" alt="Home" class="templatemo-home-image">
+							<div class="templatemo-image-overlay">
+								<p class="text-uppercase templatemo-gold">Innovvatio</p>
+								<p class="text-uppercase">Uma empresa familiar</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">uma empresa familiar</h2>
+						<h3 class="templatemo-gold">duas gerações, pai e filho na vanguarda da
+							tecnologia</h3>
+						<p class="margin-top-30">
+							Há mais de trinta e cinco anos o fundador e patriarca iniciava na área,
+							e que desde então apresenta inovações em serviços de tecnologia.
+							Agora, seu sucessor e filho entra com a garra da juventude para
+							apresentar mais inovações em serviços.
+						</p>
+					</div>
 				</div>
 			</div>
-		</footer>
-
-		<!-- MODALS  -->
-
-		<div id="modalService-01"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Oferecemos soluções avançadas de gerenciamento de banco de dados para
-					ajudar sua empresa a organizar, armazenar e acessar dados de forma
-					eficiente. Nossos especialistas em banco de dados garantem que seus dados
-					estejam seguros, disponíveis e prontos para análise.
-				</p>
+		</div>
+	</section>
+	<section id="about" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box text-right">
+						<h2 class="templatemo-brown">
+							<span class="templatemo-section-title">Nossa</span>
+							<span class="templatemo-section-title"><strong>Família </strong>e
+								<strong>Valores</strong></span>
+						</h2>
+						<p class="margin-top-15">
+							Tendo como seu primeiro emprego uma vaga na área de informática,
+							apaixonou-se pelo trabalho e nunca mais fez outra coisa na vida.
+							E nessa trajetória, já se vão mais de trinta e cinco anos de dedicação.
+						</p>
+						<p>
+							Com apenas dezenove anos, já chega apresentando o melhir do presente e
+							futuro em conhecimentos. Python, Iot, Realidade Aumentada e mais o que a
+							tecnologia.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="jcarousel-wrapper templatemo-team">
+								<div class="jcarousel">
+									<ul>
+										<li>
+											<div class="text-center templatemo-team-member-container">
+												<div class="templatemo-member-img-container">
+													<img src="images/team-img-frame.png" alt="Team img frame"
+														class="templatemo-img-frame">
+													<img src="images/team-member-1.png" alt="Team Member 1"
+														class="tm-team-member-img">
+												</div>
+												<h3
+													class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">
+													luiz claudio</h3>
+												<img src="images/underline.png" alt="Underline"
+													class="margin-top-15 img-responsive center-block">
+												<p class="margin-top-15">Análise e Desenvolvimento de Sistemas e
+													Engenharia da Computação</p>
+												<p class="templatemo-brown text-uppercase">pai</p>
+											</div>
+										</li>
+										<li>
+											<div class="text-center templatemo-team-member-container">
+												<div class="templatemo-member-img-container">
+													<img src="images/team-img-frame.png" alt="Team img frame"
+														class="templatemo-img-frame">
+													<img src="images/team-member-2.png" alt="Team Member 2"
+														class="img-circle tm-team-member-img">
+												</div>
+												<h3
+													class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">
+													fábio gomes</h3>
+												<img src="images/underline.png" alt="Underline" class="margin-top-15">
+												<p class="margin-top-15">Engenharia da Computação e Análise de
+													Dados</p>
+												<p class="templatemo-brown text-uppercase">filho</p>
+											</div>
+										</li>
+										<li>
+											<div class="text-center templatemo-team-member-container">
+												<div class="templatemo-member-img-container">
+													<img src="images/team-img-frame.png" alt="Team img frame"
+														class="templatemo-img-frame">
+													<img src="images/team-member-3.png" alt="Team Member 3"
+														class="img-circle tm-team-member-img">
+												</div>
+												<h3
+													class="tm-team-member-title templatemo-gold text-uppercase margin-top-15">
+													Rosi Mattos</h3>
+												<img src="images/underline.png" alt="Underline" class="margin-top-15">
+												<p class="margin-top-15">Administrativo e Redes Sociais</p>
+												<p class="templatemo-brown text-uppercase">equipe</p>
+											</div>
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+								<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
+			<div class="row row2">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-black-bg text-center">
+							<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+								<div class="templatemo-flex-item-ie-fix padding-15">
+									<h2 class="templatemo-gold">Nossos Valores</h2>
+									<div class="template-justify"></div>
+									<div class="templatemo-service-container margin-top-15">
+										<div class="templatemo-service-content text-center">
+											<h3 class="templatemo-service-title templatemo-brown">respitar as
+												pessoas
+											</h3>
+											<p class="templatemo-service-description">
+												Valorizamos o capital humano como o mais importante ativo de nossos
+												clientes. Respeitando a diversidade e não fazendo distinção de
+												ninguem.
+											</p>
+										</div>
+									</div>
+									<div class="templatemo-service-container">
+										<div class="templatemo-service-content text-center">
+											<h3 class="templatemo-service-title templatemo-brown">ética</h3>
+											<p class="templatemo-service-description">
+												Nossa empresa é familiar e feita por pessoas integras.
+												Sempre respeitando aos preceitos de condutas corretas e unindo
+												forças em prol dos melhores resultados e relacionamentos com nossos
+												parceiros.
+											</p>
+										</div>
+									</div>
+									<div class="templatemo-service-container">
+										<div class="templatemo-service-content text-center">
+											<h3 class="templatemo-service-title templatemo-brown">determinação
+												em
+												inovação</h3>
+											<p class="templatemo-service-description">
+												Somos focados em resultados, comprometidos com qualidade de tudo
+												que entregamos. Somos perseverantes e mesmo diante das dificuldades
+												somos criativos
+												para inovar.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">serviços e negócios diferentes,</h2>
+						<h2 class="templatemo-gold">metas e objetivos diferentes, levam a visões
+							diferentes.</h2>
+						<p class="margin-top-30">
+							Como a empresa é um ser vivo e mutável, a missão pode ser revista ao
+							longo do tempo, se
+							adequando às novas necessidades do mercado.
+							É fundamental que todos os integrantes da organização saibam qual o seu
+							propósito (missão)
+							para que, nas suas funções do dia a dia, tomem decisões adequadas a ele
+							e promovam a entrega
+							correta ao cliente e demais stakeholders.
+						</p>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="modalService-02"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Simplificamos a gestão de estoque com nossa solução personalizada de
-					controle de estoque. Mantenha o controle total sobre seus produtos,
-					rastreie o estoque em tempo real e otimize seus processos de armazenamento
-					para maximizar a eficiência.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
+	</section>
+	<section id="products" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box text-right">
+						<h2 class="templatemo-brown">
+							<span class="templatemo-section-title">Poderoso</span>
+							<span class="section-title">Senso de <span
+									class="gold"><strong>Inovação</strong></span></span>
+						</h2>
+						<p class="margin-top-30">
+							Incentivamos novas ideias a fim de encontrar as melhores oprtunidades e
+							soluções aos nossos parceiros.
+						</p>
+						<p>
+							Proporcionar uma única e marcante experiência através de tecnologias
+							ímpares é o que move o nosso processo criativo e nos permite entregar
+							serviços com qualidade aos nossos parceiros.
+						</p>
+						<p>
+							O ato de se desenvolver resulta na ação de estar apto para o próximo
+							passo, direção ou etapa superior a que se encontra na fase atual.
+						</p>
+						<p>
+							Significa em um enfoque diferenciado para produtos, serviço e ambientes
+							usados por sistemas de grande complexidade.
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="jcarousel-wrapper templatemo-products text-center">
+								<h3 class="innovv_gold">Nossos Serviços</h3>
+								<div class="jcarousel">
+									<ul>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-01">
+													<h4 class="templatemo-gold">Gerenciamento de<br>Banco de Dados</h4>
+												</a>
+												<img src="images/product-1.png" alt="Product 1"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-02">
+													<h4 class="templatemo-gold">Sistema para<br>Controle de Estoque</h4>
+												</a>
+												<img src="images/product-2.png" alt="Product 2"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-03">
+													<h4 class="templatemo-gold">User Interface<br>User Experience</h4>
+												</a>
+												<img src="images/product-3.png" alt="Product 3"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-04">
+													<h4 class="templatemo-gold">Aplicações IoT<br>Internet das Coisas
+													</h4>
+												</a>
+												<img src="images/product-4.png" alt="Product 4"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-05">
+													<h4 class="templatemo-gold">Machine<br>Learning Aplicado</h4>
+												</a>
+												<img src="images/product-5.png" alt="Product 5"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-06">
+													<h4 class="templatemo-gold">Desenvolvimento<br>Mobile Android</h4>
+												</a>
+												<img src="images/product-6.png" alt="Product 6"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-07">
+													<h4 class="templatemo-gold">Automação<br> de Processos</h4>
+												</a>
+												<img src="images/product-7.png" alt="Product 7"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-08">
+													<h4 class="templatemo-gold">Análise de<br>Bancos de Dados<br></h4>
+												</a>
+												<img src="images/product-8.png" alt="Product 8"
+													class="templatemo-product-img">
+											</div>
+										</li>
+										<li>
+											<div class="templatemo-product-container text-center">
+												<a href="#modalService-09">
+													<h4 class="templatemo-gold">Desenvolvimento<br> de Sites</h4>
+												</a>
+												<img src="images/product-9.png" alt="Product 9"
+													class="templatemo-product-img">
+											</div>
+										</li>
+									</ul>
+								</div>
+								<a href="#" class="jcarousel-control-prev inactive">&lsaquo;</a>
+								<a href="#" class="jcarousel-control-next">&rsaquo;</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="modalService-03"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Nossa equipe de designers de UI/UX transforma ideias em experiências de
-					usuário excepcionais. Criamos interfaces intuitivas e agradáveis que
-					cativam seus clientes, proporcionando uma experiência de usuário memorável.
-				</p>
+	</section>
+	<section id="projects" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<div class="templatemo-flex-center templatemo-brown-rectangle-bg">
+							<div class="templatemo-team">
+								<img src="images/projetos.png" alt class="templatemo-home-image" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">projetos inovadores,</h2>
+						<h3 class="templatemo-gold">metas e objetivos diferentes, levam a visões
+							diferentes.</h3>
+						<p class="margin-top-30">
+							Como a empresa é um ser vivo e mutável, a missão pode ser revista ao
+							longo do tempo, se
+							adequando às novas necessidades do mercado.
+							É fundamental que todos os integrantes da organização saibam qual o seu
+							propósito (missão)
+							para que, nas suas funções do dia a dia, tomem decisões adequadas a ele
+							e promovam a entrega
+							correta ao cliente e demais stakeholders.
+						</p>
+					</div>
+				</div>
 			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
+			<div class="row2">
+				<div class="templatemo-flex-center templatemo-dashboard-brown-rectangle-bg">
+					<div class="container">
+						<div class="row2">
+							<div class="col-lg-12 col-md-12 text-center">
+								<div class="templatemo-dashboard-content-box">
+									<h2 class="templatemo-brown">
+										<span class="templatemo-dashboard-section-title">Nossos Projetos</span>
+									</h2>
+									<div class="templatemo-dashboard-content-box">
+										<h3 class="templatemo-brown">
+											<span class="templatemo-dashboard-section-title-left">Dashboard de
+												Projetos</span>
+										</h3>
+										<div class="templatemo-dashboard-flex-container">
+											<div class="templatemo-dashboard-section-title">
+												<h4 class="templatemo-brown">
+													<span class="templatemo-section-title">Projetos Entreges</span>
+												</h4>
+												<h1 class="templatemo-dashboard-icon">
+													<div class="templatemo-dashboard-icon">
+														<i class="fa fa-trophy"></i>
+													</div>
+												</h1>
+												<p>197</p>
+											</div>
+											<div class="templatemo-dashboard-section-title">
+												<h4 class="templatemo-brown">
+													<span class="templatemo-section-title">Satisfação por
+														Projetos</span>
+												</h4>
+												<h1 class="templatemo-dashboard-icon">
+													<div class="templatemo-dashboard-icon">
+														<i class="fa fa-bar-chart"></i>
+													</div>
+												</h1>
+												<p>97 %</p>
+											</div>
+											<div class="templatemo-dashboard-section-title">
+												<h4 class="templatemo-brown">
+													<span class="templatemo-section-title">Satisfação dos
+														Parceiros</span>
+												</h4>
+												<h1 class="templatemo-dashboard-icon">
+													<div class="templatemo-dashboard-icon">
+														<i class="fa fa-pie-chart"></i>
+													</div>
+												</h1>
+												<p>96 %</p>
+											</div>
+										</div>
+										<div class="templatemo-dashboard-flex-container">
+											<div class="templatemo-dashboard-section-title text-left">
+												<h3 class="templatemo-brown">
+													<span class="templatemo-section-title">Projetos Entreges</span>
+												</h3>
+												<table id="colunmChart"
+													class="charts-css column show-data-on-hover show-labels show-primary-axis data-spacing-2">
+													<thead>
+														<tr>
+															<th scope="col"> Anos </th>
+															<th scope="col"> Projetos </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th>97-00</th>
+															<td style="--size: calc( 14 / 100 );">14</td>
+														</tr>
+														<tr>
+															<th>00-05</th>
+															<td style="--size: calc( 28 / 100 );">28</td>
+														</tr>
+														<tr>
+															<th>05-10</th>
+															<td style="--size: calc( 48 / 100 );">48</td>
+														</tr>
+														<tr>
+															<th>10-15</th>
+															<td style="--size: calc( 42 / 100 );">42</td>
+														</tr>
+														<tr>
+															<th>15-20</th>
+															<td style="--size: calc( 33 / 100 );">33</td>
+														</tr>
+														<tr>
+															<th>20-25</th>
+															<td style="--size: calc( 32 / 100 );">32</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="templatemo-dashboard-flex-container">
+											<div class="templatemo-dashboard-section-title text-left">
+												<h3 class="templatemo-brown">
+													<span class="templatemo-section-title">Satisfação por
+														Projetos</span>
+												</h3>
+												<table id="lineChart"
+													class="charts-css line show-data-on-hover show-labels show-primary-axis">
+													<thead>
+														<tr>
+															<th scope="col"> Anos </th>
+															<th scope="col"> Projetos </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td style="--start: 0.0; --size: 0.9;">99</td>
+														</tr>
+														<tr>
+															<td style="--start: 0.9; --size: 0.9;">98</td>
+														</tr>
+														<tr>
+															<td style="--start: 0.9; --size: 0.9;">98</td>
+														</tr>
+														<tr>
+															<td style="--start: 0.9; --size: 0.9;">96</td>
+														</tr>
+														<tr>
+															<td style="--start: 0.9; --size: 0.9;">98</td>
+														</tr>
+														<tr>
+															<td style="--start: 0.9; --size: 0.9;">98</td>
+														</tr>
+												</table>
+											</div>
+										</div>
+										<div class="templatemo-dashboard-flex-container">
+											<div class="templatemo-dashboard-section-title text-left">
+												<h3 class="templatemo-brown">
+													<span class="templatemo-section-title">Satisfação dos
+														Parceiros</span>
+												</h3>
+												<table id="pieChart"
+													class="charts-css bar show-data-on-hover show-labels show-data-axes data-spacing-2">
+													<thead>
+														<tr>
+															<th scope="col"> Satisfeitos </th>
+															<th scope="col"> Não Satisfeitos </th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<th>Satisfeitos</th>
+															<td style="--size: calc( 97 / 100 );">97</td>
+														</tr>
+														<tr>
+															<th>Não <br>Satisfeitos</th>
+															<td style="--size: calc( 3 / 100 );">3</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="modalService-04"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Conectamos o mundo físico ao digital com nossas soluções de IoT.
-					Desenvolvemos aplicativos e sistemas para dispositivos conectados,
-					permitindo monitoramento e controle remoto avançados para uma variedade de
-					aplicações.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
-		</div>
-
-		<div id="modalService-05"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Utilizamos o poder do machine learning para impulsionar suas vendas e
-					campanhas de marketing. Nossos algoritmos avançados analisam dados para
-					fornecer insights valiosos, personalização de conteúdo e previsões
-					precisas.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
-		</div>
-
-		<div id="modalService-06"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Criamos aplicativos móveis Android de alta qualidade, oferecendo
-					funcionalidade e design excepcionais. Nossa equipe de desenvolvedores
-					Android transforma suas ideias em aplicativos incríveis.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
-		</div>
-
-		<div id="modalService-07"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Automatizamos seus processos empresariais para aumentar a eficiência e
-					reduzir custos. Deixe-nos criar soluções personalizadas que otimizam seus
-					fluxos de trabalho e impulsionam a produtividade.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
-		</div>
-
-		<div id="modalService-08"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Oferecemos análise de dados personalizadas e super avançadas de seus bancos
-					de dados para extrair insights valiosos de seus dados. Aproveite o poder
-					dos dados para tomar decisões informadas.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
+	</section>
+	<section id="contact" class="templatemo-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-flex-center templatemo-black-bg">
+						<form action="#" method="post">
+							<div class="tm-contact-form">
+								<div class="form-group">
+									<input type="text" id="contact_name" class="form-control" placeholder="Name..." />
+								</div>
+								<div class="form-group">
+									<input type="email" id="contact_email" class="form-control"
+										placeholder="Email..." />
+								</div>
+								<div class="form-group">
+									<input type="text" id="contact_subject" class="form-control"
+										placeholder="Subject..." />
+								</div>
+								<div class="form-group">
+									<textarea id="contact_message" class="form-control" rows="8"
+										placeholder="Message..."></textarea>
+								</div>
+							</div>
+							<button type="submit"
+								class="btn text-uppercase templatemo-btn templatemo-send-btn">Send</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-6 col-md-6">
+					<div class="templatemo-content-box templatemo-second-box">
+						<h2 class="templatemo-brown">Entre em <span class="templatemo-gold">Contato
+								Conosco</span></h2>
+						<p class="margin-top-30">
+							Ainda precisa de ajuda? Entre em contato com a gente por meio do
+							formulário ao lado.
+						</p>
+						<div>
+							<img src="images/social-icons.png" alt="Social icons" class="templatemo-social-icons-img">
+							<a href="http://www.facebook.com">
+								<div id="facebook" class="templatemo-social-icon"></div>
+							</a>
+							<a href="http://www.twitter.com">
+								<div id="twitter" class="templatemo-social-icon"></div>
+							</a>
+							<a href="http://plus.google.com">
+								<div id="google" class="templatemo-social-icon"></div>
+							</a>
+							<a href="http://www.vimeo.com">
+								<div id="vimeo" class="templatemo-social-icon"></div>
+							</a>
+							<a href="http://www.flickr.com">
+								<div id="flickr" class="templatemo-social-icon"></div>
+							</a>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-
-		<div id="modalService-09"
-			class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Criamos sites atraentes e funcionais que representam sua marca e alcançam
-					seu público-alvo. Nossos sites são responsivos e otimizados para oferecer a
-					melhor experiência de usuário.
+	</section>
+	<footer class="container margin-top-30">
+		<div class="row">
+			<div class="col-lg-12">
+				<p class="templatemo-copyright-container text-uppercase small templatemo-brown">
+					<span class="templatemo-copyright-text">Copyright &copy; 2023 <a href="#"
+							class="templatemo-gold">Innovvatio I. T. Ltda.</a></span>
+					<!-- <span class="templatemo-copyright-design">Design: <a href="http://www.templatemo.com" class="templatemo-gold">templatemo</a></span> -->
 				</p>
 			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
 		</div>
+	</footer>
 
-		<div id="modal" class="modalService innovv_service-brown-rectangle-bg">
-			<div>
-				<p class="modalService-content">
-					Oferecemos soluções avançadas de gerenciamento de banco de dados para
-					ajudar sua empresa a organizar, armazenar e acessar dados de forma
-					eficiente. Nossos especialistas em banco de dados garantem que seus dados
-					estejam seguros, disponíveis e prontos para análise.
-				</p>
-			</div>
-			<div class="modalService-bottom">
-				<a href="#service" alt>X</a>
-			</div>
+	<!-- MODALS  -->
+
+	<div id="modalService-01" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Oferecemos soluções avançadas de gerenciamento de banco de dados para
+				ajudar sua empresa a organizar, armazenar e acessar dados de forma
+				eficiente. Nossos especialistas em banco de dados garantem que seus dados
+				estejam seguros, disponíveis e prontos para análise.
+			</p>
 		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
 
-		<!-- END MODALS  -->
+	<div id="modalService-02" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Simplificamos a gestão de estoque com nossa solução personalizada de
+				controle de estoque. Mantenha o controle total sobre seus produtos,
+				rastreie o estoque em tempo real e otimize seus processos de armazenamento
+				para maximizar a eficiência.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
 
-		<script src="js/jquery-1.11.1.min.js"></script>
-		<script src="js/jquery.jcarousel.min.js"></script>
-		<script src="js/templatemo_script.js"></script>
-	</body>
+	<div id="modalService-03" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Nossa equipe de designers de UI/UX transforma ideias em experiências de
+				usuário excepcionais. Criamos interfaces intuitivas e agradáveis que
+				cativam seus clientes, proporcionando uma experiência de usuário memorável.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-04" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Conectamos o mundo físico ao digital com nossas soluções de IoT.
+				Desenvolvemos aplicativos e sistemas para dispositivos conectados,
+				permitindo monitoramento e controle remoto avançados para uma variedade de
+				aplicações.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-05" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Utilizamos o poder do machine learning para impulsionar suas vendas e
+				campanhas de marketing. Nossos algoritmos avançados analisam dados para
+				fornecer insights valiosos, personalização de conteúdo e previsões
+				precisas.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-06" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Criamos aplicativos móveis Android de alta qualidade, oferecendo
+				funcionalidade e design excepcionais. Nossa equipe de desenvolvedores
+				Android transforma suas ideias em aplicativos incríveis.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-07" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Automatizamos seus processos empresariais para aumentar a eficiência e
+				reduzir custos. Deixe-nos criar soluções personalizadas que otimizam seus
+				fluxos de trabalho e impulsionam a produtividade.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-08" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Oferecemos análise de dados personalizadas e super avançadas de seus bancos
+				de dados para extrair insights valiosos de seus dados. Aproveite o poder
+				dos dados para tomar decisões informadas.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modalService-09" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Criamos sites atraentes e funcionais que representam sua marca e alcançam
+				seu público-alvo. Nossos sites são responsivos e otimizados para oferecer a
+				melhor experiência de usuário.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<div id="modal" class="modalService innovv_service-brown-rectangle-bg">
+		<div>
+			<p class="modalService-content">
+				Oferecemos soluções avançadas de gerenciamento de banco de dados para
+				ajudar sua empresa a organizar, armazenar e acessar dados de forma
+				eficiente. Nossos especialistas em banco de dados garantem que seus dados
+				estejam seguros, disponíveis e prontos para análise.
+			</p>
+		</div>
+		<div class="modalService-bottom">
+			<a href="#service" alt>X</a>
+		</div>
+	</div>
+
+	<!-- END MODALS  -->
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.jcarousel.min.js"></script>
+	<script src="js/templatemo_script.js"></script>
+</body>
+
 </html>

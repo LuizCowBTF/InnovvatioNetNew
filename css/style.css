@@ -9,12 +9,13 @@ COLOR CODES
 TABELA DE CONTEÚDO
   1. Estilos Universais
   2. Estilos de cabeçalho e menu
-  3. Estilos da página Home
-  4. Estilos da página Sobre & Serviços
-  5. Estilos da página Contatos & Footer
-  6. Modals
-  7. SlideShow
-  8. Media Queries
+  3. Estilos da section (página) Home
+  4. Estilos das sections (páginas) Sobre & Serviços
+  5. Estilos das sections (páginas) Projetos e Dashboard
+  6. Estilos das sections (páginas) Contatos & Footer
+  7. jCarousel
+  8. Estilos das Modals
+  9. Estilos em Media Queries
 --------------------------------------*/
 
 /* -------------------------------------
@@ -28,6 +29,8 @@ TABELA DE CONTEÚDO
 }
 
 body {
+  margin: 0;
+  padding: 0;
   transition: background 0.2s linear;
   color:#000000;
   font-size: 14px;
@@ -62,12 +65,16 @@ h4 {
   margin-top: 0;
 }
 
-
-
 a:hover,
 a:focus {
   color: #b28601;
   text-decoration: none;
+}
+
+caption {
+  color: #00CCFF;
+  font-size: 12px;
+  font-weight: bolder;
 }
 
 p {
@@ -81,39 +88,6 @@ ul {
 
 input[type="checkbox"] {
   display: none;
-}
-
-.row2 {
-  margin: 50px 0;
-  
-}
-
-.dark {
-  background-color: #000000;
-  color: #00CCFF;
-  font-weight: 100;
-  p {
-    color: #000000;
-    font-weight: bolder;
-  }
-}
-
-.btnTheme {
-  background-color: transparent;
-  border: none;
-  color: gold;
-  margin-left: 30px;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-
-.blue {
-  color: #6BE;
-}
-
-.green {
-  color: #6E6;
 }
 
 .col-md-6,
@@ -138,21 +112,11 @@ input[type="checkbox"] {
   padding: 30px;
 }
 
-.templatemo-section-title {
-  display: block;
-}
-
-.templatemo-home-image,
-.templatemo-image-overlay,
-.templatemo-black-bg {
+.templatemo-section {
+  margin: 120px 20px;
+  padding: 30px 5px;
+  border: 3px solid #865701;
   border-radius: 30px;
-  width: 100%;
-}
-
-.templatemo-black-bg,
-.templatemo-content-box {
-  width: 523px;
-  height: 523px;
 }
 
 .templatemo-content-box {
@@ -176,11 +140,14 @@ input[type="checkbox"] {
   padding: 50px;
 }
 
+.templatemo-black-bg,
+.templatemo-content-box {
+  width: 523px;
+  height: 523px;
+}
 
-/* IE fix */
-.templatemo-flex-item-ie-fix,
-.templatemo-content-box>* {
-  width: 100%;
+.templatemo-section-title {
+  display: block;
 }
 
 .templatemo-flex-center {
@@ -211,6 +178,10 @@ input[type="checkbox"] {
   height: 80%;
 }
 
+.templatemo-black {
+  color: #000000;
+}
+
 .templatemo-brown {
   color: #865701;
 }
@@ -236,6 +207,66 @@ input[type="checkbox"] {
   position: relative;
 }
 
+.row2 {
+  margin: 50px 0;
+}
+
+.dark {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #00CCFF;
+  font-weight: 100;
+  p {
+    color: #00CCFF;
+    font-weight: bolder;
+  }
+}
+
+.btnTheme {
+  background-color: transparent;
+  border: none;
+  color: gold;
+  margin-left: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.blue {
+  color: #6BE;
+}
+
+.green {
+  color: #6E6;
+}
+
+.black {
+  color: #000000;
+}
+
+.lightgray {
+  color: #929292;
+}
+
+.darkgray {
+  color: #2a2a2a;
+}
+
+.brown {
+  color: #865701, rgb(134,87,1);
+}
+
+.gold {
+  color: #b28601, rgb(178,134,1);
+}
+
+/* IE fix */
+.templatemo-flex-item-ie-fix,
+.templatemo-content-box>* {
+  width: 100%;
+}
+
+
 /* -------------------------------------
 2. Estilos das SECTIONS cabeçalho e menu
 --------------------------------------*/
@@ -246,6 +277,8 @@ input[type="checkbox"] {
   height: 82px;
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   width: 100%;
   z-index: 2000;
   -webkit-transition: all 0.3s ease;
@@ -257,7 +290,6 @@ input[type="checkbox"] {
 }
 
 .templatemo-site-header h1 {
-  font-size: 60px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -266,21 +298,10 @@ input[type="checkbox"] {
   font-size: 34px;
 }
 
-.templatemo-site-name {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 30px;
-}
-
-.templatemo-site-name img {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding: 0;
-}
-
 .templatemo-site-header .templatemo-nav {
   position: absolute;
   bottom: 14px;
+  left: 40%;
   right: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -290,24 +311,22 @@ input[type="checkbox"] {
   bottom: 6px;
 }
 
-.ie11 .templatemo-site-header.sticky .templatemo-nav,
-.ie10 .templatemo-site-header.sticky .templatemo-nav {
-  bottom: 7px;
+.templatemo-site-header.sticky .templatemo-nav ul li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
 
-/*
-https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491
-*/
-@-moz-document url-prefix() {
-  .templatemo-site-header .templatemo-nav {
-    bottom: 16px;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
+.templatemo-site-name {
+  font-size: 60px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0 30px;
+}
 
-  .templatemo-site-header.sticky .templatemo-nav {
-    bottom: 8px;
-  }
+.templatemo-site-name img {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .templatemo-nav ul li {
@@ -316,14 +335,9 @@ https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/95349
 }
 
 .templatemo-nav ul li a {
-  padding: 15px 20px;
+  padding: 15px 10px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-
-.templatemo-site-header.sticky .templatemo-nav ul li a {
-  padding-top: 8px;
-  padding-bottom: 8px;
 }
 
 .templatemo-nav ul li.active a {
@@ -337,13 +351,6 @@ https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/95349
 
 .templatemo-nav ul li a {
   color: #865701;
-}
-
-#responsive-menu ul li:hover a,
-#responsive-menu ul li.active a,
-.templatemo-nav li:hover a,
-.templatemo-nav li.active a {
-  color: #b28601;
 }
 
 .templatemo-nav li:hover a,
@@ -393,6 +400,19 @@ a:focus {
   margin-right: 15px;
 }
 
+#responsive-menu ul li:hover a,
+#responsive-menu ul li.active a,
+.templatemo-nav li:hover a,
+.templatemo-nav li.active a {
+  color: #b28601;
+}
+
+#responsive-menu ul li a:hover,
+#responsive-menu ul li.active a {
+  background: #333;
+  text-decoration: none;
+}
+
 a#mobile_menu {
   font-size: 24px;
   background-color: rgba(178, 134, 1, 0.8);
@@ -409,19 +429,35 @@ a#mobile_menu {
   z-index: 5500;
 }
 
-#responsive-menu ul li a:hover,
-#responsive-menu ul li.active a {
-  background: #333;
-  text-decoration: none;
+.ie11 .templatemo-site-header.sticky .templatemo-nav,
+.ie10 .templatemo-site-header.sticky .templatemo-nav {
+  bottom: 7px;
+}
+
+/*
+https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491
+*/
+@-moz-document url-prefix() {
+  .templatemo-site-header .templatemo-nav {
+    bottom: 16px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+
+  .templatemo-site-header.sticky .templatemo-nav {
+    bottom: 8px;
+  }
 }
 
 /* -------------------------------------
-3. Estilos da SECTION Home
+3. Estilos da section (página) Home
 --------------------------------------*/
 
-#home {
-  padding-top: 100px;
-  padding-bottom: 50px;
+.templatemo-home-image,
+.templatemo-image-overlay,
+.templatemo-black-bg {
+  border-radius: 30px;
+  width: 100%;
 }
 
 .templatemo-home-image-container {
@@ -486,19 +522,9 @@ a#mobile_menu {
 }
 
 
-/* -------------------------------------
-4. Estilos das SECTIONS Sobre & Serviços
---------------------------------------*/
-
-#about {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#products {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+/* -----------------------------------------------
+4. Estilos das sections (páginas) Sobre & Serviços
+------------------------------------------------*/
 
 .templatemo-team-member-container {
   max-width: 250px;
@@ -539,10 +565,122 @@ h3.templatemo-service-title {
   margin-top: 0;
 }
 
+/* ---------------------------------------------------
+5. Estilos das sections (páginas) Projetos e Dashboard
+----------------------------------------------------*/
 
-/* ------------------------------------
-5. Contact & Footer Styles
--------------------------------------*/
+.templatemo-dashboard-brown-rectangle-bg {
+  border: 1px solid #865701;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.templatemo-dashboard-black-bg,
+.templatemo-dashboard-content-box {
+  width: 100%;
+  height: 100%;
+}
+
+.templatemo-dashboard-black-pqn-bg,
+.templatemo-dashboard-content-pqn-box {
+  width: 90%;
+  height: 100%;
+}
+
+.templatemo-dashboard-content-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.templatemo-dashboard-flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #865701;
+  width: 100%;
+  height: 100%;
+  margin: 20px auto;
+  border-radius: 30px;
+}
+
+.templatemo-dashboard-flex-container > div {
+  border: 1px solid #865701;
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
+.templatemo-dashboard-section-title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.templatemo-dashboard-section-title-left {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 30px;
+}
+
+.templatemo-dashboard-section-title-right {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 30px;
+}
+
+.templatemo-dashboard-section-text {
+  display: block;
+  margin-left: 20px;
+}
+
+.templatemo-dashboard-icon {
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.templatemo-dashboard-chart {
+  width: 100%;
+  max-width: 100%;
+}
+
+#colunmChart,
+#lineChart,
+#pieChart {
+  width: 700px;
+  height: 200px;
+  font-size: 15px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 20px;
+  background-color: rgba(51, 51, 51, 0.9);
+}
+
+
+/* ------------------------------------------------
+6. Estilos das sections (páginas) Contatos & Footer
+-------------------------------------------------*/
 
 form {
   width: 430px;
@@ -621,8 +759,10 @@ footer {
   padding-left: 30px;
 }
 
-/* 6. jCarousel http://sorgalla.com/jcarousel 
+/* --------------------------------------------
+7. jCarousel http://sorgalla.com/jcarousel 
 ---------------------------------------------*/
+
 .jcarousel-wrapper {
   position: relative;
 }
@@ -735,10 +875,19 @@ have a fixed width and height (but it's not required).
   margin-top: 30px;
 }
 
-/* 7. Media Queries
---------------------------------------*/
-@media screen and (max-width: 1199px) {
 
+/* -------------------------------------
+8. Estilos das Modals
+--------------------------------------*/
+
+
+
+
+/* -------------------------------------
+9. Estilos em Media Queries
+--------------------------------------*/
+
+@media screen and (max-width: 1199px) {
   .templatemo-black-bg,
   .templatemo-content-box {
     width: 480px;
@@ -781,18 +930,6 @@ have a fixed width and height (but it's not required).
     padding-bottom: 10px;
   }
 
-  #home {
-    padding-top: 100px;
-  }
-
-  #about {
-    padding-top: 100px;
-  }
-
-  #services {
-    padding-top: 100px;
-  }
-
   .templatemo-black-bg,
   .templatemo-content-box {
     margin-left: auto;
@@ -816,18 +953,6 @@ have a fixed width and height (but it's not required).
 
   .templatemo-nav {
     bottom: -6px;
-  }
-
-  #home {
-    padding-top: 30px;
-  }
-
-  #about {
-    padding-top: 30px;
-  }
-
-  #services {
-    padding-top: 30px;
   }
 
   .templatemo-black-bg,
@@ -898,3 +1023,4 @@ have a fixed width and height (but it's not required).
     width: 75%;
   }
 }
+

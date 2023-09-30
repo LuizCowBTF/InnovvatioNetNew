@@ -23,7 +23,14 @@
           "@-moz-document"
         ]
       }
-    ]
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id-aria": "off"
+      }
+    ],
+    "no-inline-styles": "off"
   },
   "browserslist": [
     "defaults",
