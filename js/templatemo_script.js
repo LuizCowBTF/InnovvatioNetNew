@@ -150,9 +150,6 @@ $(document).ready(function()
     detectIE();
 });
 
-
-
-
 // DARK MODE
 function changeTheme() {
   var element = document.body;
@@ -162,6 +159,9 @@ function changeTheme() {
 function changeBtn(x) {
   x.classList.toggle("fa-moon-o")
 }
+
+
+
 
 
 
