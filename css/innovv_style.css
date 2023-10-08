@@ -146,13 +146,17 @@ input[type="checkbox"] {
 }
 
 .innovv-section {
-  margin: 200px 20px;
-  padding: 80px 5px;
+  margin: 20px 20px;
+  padding: 20px 5px;
 }
 
 .innovv-section-end {
-  margin: 100px 20px;
-  padding: 80px 5px;
+  margin: 20px 20px;
+  padding: 20px 5px;
+}
+
+.innovv-second-box {
+  margin-top: 20px;
 }
 
 .innovv-section-title {
@@ -540,7 +544,7 @@ a#mobile_menu {
 
 
 #about {
-  margin-top: 120px;
+  margin-top: 180px;
 }
 
 .innovv-team-member-container {
@@ -578,6 +582,10 @@ a#mobile_menu {
   width: 75%;
 }
 
+#service {
+  margin-top: 150px;
+}
+
 .innovv-service-container {
   margin-top: 15px;
 }
@@ -599,7 +607,7 @@ h3.innovv-service-title {
 ----------------------------------------------------*/
 
 #project {
-  margin-top:  120px;
+  margin-top:  150px;
 }
 
 .innovv-project-flex-center {
@@ -718,7 +726,7 @@ h3.innovv-service-title {
 
 
 #contact {
-  margin-top: 120px;
+  margin-top: 150px;
 }
 
 form {
@@ -1053,6 +1061,26 @@ have a fixed width and height (but it's not required).
 }
 
 @media screen and (max-width: 991px) {
+  #home {
+    margin-top: 20px;
+  }
+
+  #about {
+    margin-top: 20px;
+  }
+
+  #services {
+    margin-top: 20px;
+  }
+
+  #project {
+    margin-top: 30px;
+  }
+
+  #contact {
+    margin-top: 30px;
+  }
+
   .innovv-site-header {
     height: 48px;
     top: -60px;
@@ -1061,7 +1089,6 @@ have a fixed width and height (but it's not required).
   .innovv-site-name > img {
     margin-top: -100px;
   }
-
 
   .innovv-site-header h1 {
     font-size: 35px;
@@ -1072,11 +1099,86 @@ have a fixed width and height (but it's not required).
     bottom: 8px;
   }
 
-  /*https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491*/
-  @-moz-document url-prefix() {
-    .innovv-site-header .innovv-nav {
-      bottom: 11px;
-    }
+  .innovv-nav ul li a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+
+  .innovv-section-first {
+    margin: 20px;
+    padding: 0 5px;
+  }
+
+  .innovv-black-bg,
+  .innovv-content-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .innovv-content-box {
+    height: auto;
+    padding: 0px;
+  }
+
+  .innovv-flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+  .innovv-section {
+    margin-top: 5px;
+  }
+
+  .innovv-second-box {
+    margin-top: 5px;
+  }
+
+  .innovv-project-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .innovv-project-flex > div {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 26px;
+    margin: 20px auto;
+  }
+
+  .innovv-projects-icon {
+    margin: 0;
+    padding: 0;
+    font-weight: bolder;
+    background-color: #865701;
+  }
+  
+  .innovv-projects-btn {
+    padding: 0;
+    background-color: #865701;
+  }
+
+  .innovv-project-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .innovv-social-icon {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
   }
 
   .ie11 .innovv-site-header .innovv-nav,
@@ -1088,34 +1190,13 @@ have a fixed width and height (but it's not required).
     bottom: 7px;
   }
 
-  .innovv-nav ul li a {
-    padding-top: 10px;
-    padding-bottom: 10px;
+  /*https://stackoverflow.com/questions/952861/targeting-only-firefox-with-css/953491#953491*/
+  @-moz-document url-prefix() {
+    .innovv-site-header .innovv-nav {
+      bottom: 11px;
+    }
   }
 
-  #home {
-    padding-top: 100px;
-  }
-
-  .innovv-black-bg,
-  .innovv-content-box {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .innovv-content-box {
-    height: auto;
-    padding: 15px;
-  }
-
-  .innovv-section {
-    margin-top: 50px;
-  }
-
-  .innovv-project-flex {
-    display: flex;
-    flex-direction: column;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1128,7 +1209,23 @@ have a fixed width and height (but it's not required).
   }
 
   #home {
-    padding-top: 30px;
+    margin-top: 5px;
+  }
+
+  #about {
+    margin-top: 5px;
+  }
+
+  #services {
+    margin-top: 5px;
+  }
+
+  #project {
+    margin-top: 10px;
+  }
+
+  #contact {
+    margin-top: 5px;
   }
 
   .innovv-black-bg,
@@ -1149,8 +1246,43 @@ have a fixed width and height (but it's not required).
     padding: 30px;
   }
 
+  .innovv-content-box {
+    height: auto;
+    padding: 15px;
+  }
+
+  .innovv-section {
+    margin-top: 10px;
+  }
+
   .innovv-second-box {
-    margin-top: 50px;
+    margin-top: 5px;
+  }
+
+  .innovv-project-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .innovv-project-flex > div {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 26px;
+    margin: 10px auto;
+  }
+
+  .innovv-projects-icon {
+    font-size: 22px;
+    margin: 5px;
+    font-weight: bolder;
+    background-color: #865701;
+  }
+
+  .fa {
+    padding: 0;
+    margin: 0;
+    font: 8px;
   }
 
   .innovv-product-container>* {
@@ -1159,11 +1291,6 @@ have a fixed width and height (but it's not required).
 
   .innovv-service-container>* {
     text-align: center;
-  }
-
-  .innovv-project-flex {
-    display: flex;
-    flex-direction: column;
   }
 
   .innovv-service-image {
@@ -1190,8 +1317,16 @@ have a fixed width and height (but it's not required).
     padding: 5px;
   }
 
+  .innovv-brown-rectangle-bg-small {
+    width: 100px;
+  }
+
+  .innovv-section-title {
+    font-size: 10px;
+  }
+
   .innovv-project .jcarousel-control-prev {
-    left: 0;
+    left: 0px;
   }
 
   .innovv-project .jcarousel-control-next {
@@ -1212,6 +1347,15 @@ have a fixed width and height (but it's not required).
     display: flex;
     flex-direction: column;
   }
+
+  .innovv-logo {
+    width: 75%;
+  }
+
+  .form4 {
+    margin-top: 70px;
+  }
+
 }
 
 
