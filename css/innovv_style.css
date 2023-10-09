@@ -1306,6 +1306,138 @@ have a fixed width and height (but it's not required).
   .innovv-copyright-container {
     padding-left: 0;
   }
+
+  .modal {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 70%;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 400px;
+    height: 300px;
+    z-index: 4;
+  }
+
+  .modal-content-dashboard {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 400px;
+    height: 350px;
+    z-index: 4;
+  }
+
+  .modal-project {
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 100%;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .modal-content-project {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 400px;
+    height: 500px;
+    z-index: 4;
+  }
+
+  #colunmChart {
+    width: 350px;
+    height: 200px;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    th {
+      font-size: 10px;
+      padding: 0;
+      margin: 0;
+    }
+    td {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  
+  #lineChart {
+    width: 350px;
+    height: 200px;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+  }
+  
+  #barChart {
+    width: 350px;
+    height: 200px;
+    font-size: 10px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    tbody {
+      margin-bottom: 80px;
+    }
+    th {
+      font-size: 10px;
+      padding-bottom: 0px;
+      margin-bottom: 30px;
+    }
+    td {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .img-modal {
+    width: 70%;
+  }
+
+  .img-modal-h {
+    width: 30%;
+  }
+
+  video {
+    width: 70%;
+  }
+  
 }
 
 @media screen and (max-width: 400px) {
