@@ -93,6 +93,11 @@ input[type="checkbox"] {
   display: none;
 }
 
+footer {
+  margin: 50px 10px;
+  padding: 50px auto;
+}
+
 .dark {
   margin: 0;
   padding: 0;
@@ -101,6 +106,14 @@ input[type="checkbox"] {
   font-weight: 100;
   color: #00CCFF;
   font-weight: bolder;
+}
+
+.container-nav {
+  margin: 0;
+}
+
+.container {
+  margin-top: 50px;
 }
 
 .col-md-6,
@@ -140,18 +153,8 @@ input[type="checkbox"] {
   padding-left: 10px;
 }
 
-.innovv-section-first {
-  margin: 80px 20px;
-  padding: 20px 5px;
-}
-
 .innovv-section {
-  margin: 20px 20px;
-  padding: 20px 5px;
-}
-
-.innovv-section-end {
-  margin: 20px 20px;
+  margin-top: 120px;
   padding: 20px 5px;
 }
 
@@ -253,6 +256,12 @@ input[type="checkbox"] {
   margin-left: -15px;
 }
 
+.btn {
+  font-size: 10px;
+  font-weight: bolder;
+  color: gold;
+}
+
 .innovv-btnTheme {
   background-color: transparent;
   border: none;
@@ -266,7 +275,7 @@ input[type="checkbox"] {
   background-color: transparent !important;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .innovv-position-relative {
@@ -471,10 +480,6 @@ a#mobile_menu {
 --------------------------------------*/
 
 
-#home {
-  margin-top: 100px;
-}
-
 .innovv-home-image-container {
   display: inline-block;
   position: relative;
@@ -531,11 +536,10 @@ a#mobile_menu {
 
 .innovv-info-btn {
   margin-top: 30px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 150px;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 200px;
 }
-
 
 
 /* -----------------------------------------------
@@ -543,9 +547,6 @@ a#mobile_menu {
 ------------------------------------------------*/
 
 
-#about {
-  margin-top: 180px;
-}
 
 .innovv-team-member-container {
   max-width: 250px;
@@ -582,9 +583,7 @@ a#mobile_menu {
   width: 75%;
 }
 
-#service {
-  margin-top: 150px;
-}
+
 
 .innovv-service-container {
   margin-top: 15px;
@@ -606,9 +605,7 @@ h3.innovv-service-title {
 5. Estilos das sections (páginas) Projetos e Dashboard
 ----------------------------------------------------*/
 
-#project {
-  margin-top:  150px;
-}
+
 
 .innovv-project-flex-center {
   display: -webkit-box;
@@ -725,9 +722,6 @@ h3.innovv-service-title {
 -------------------------------------------------*/
 
 
-#contact {
-  margin-top: 150px;
-}
 
 form {
   width: 430px;
@@ -785,12 +779,10 @@ form {
   display: inline-block;
 }
 
-footer {
-  padding-bottom: 50px;
-}
+
 
 .innovv-footer {
-  margin-top: 50px;
+  margin-top: 100px;
   margin-bottom: 30px;
   margin-left: 20px;
   margin-right: 20px;
@@ -968,10 +960,66 @@ have a fixed width and height (but it's not required).
   z-index: 4;
 }
 
+.modal-profile {
+  position: fixed;
+  display: none;
+  width: 50%;
+  height: 85%;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 80px;
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid #865701;
+  border-radius: 30px;
+  z-index: 2;
+  justify-content: center;
+}
+
+.modal-content-profile {
+  position: relative;
+  margin: 30px auto;
+  padding: 10px 5px;
+  border: 1px solid #865701;
+  border-radius: 30px;
+  background-color: #000000;
+  width: 600px;
+  height: 450px;
+  z-index: 4;
+}
+
 .modal-content-dashboard {
   position: relative;
   margin: 80px auto;
   padding: 20px 15px;
+  border: 1px solid #865701;
+  border-radius: 30px;
+  background-color: #000000;
+  width: 800px;
+  height: 500px;
+  z-index: 4;
+}
+
+.modal-project {
+  position: fixed;
+  display: none;
+  width: 70%;
+  height: 85%;
+  top: 100px;
+  right: 0;
+  bottom: 0;
+  left: 100px;
+  background-color: rgba(0,0,0,0.8);
+  border: 1px solid #865701;
+  border-radius: 30px;
+  z-index: 2;
+  justify-content: center;
+}
+
+.modal-content-project {
+  position: relative;
+  margin: 10px auto;
+  padding: 10px 5px;
   border: 1px solid #865701;
   border-radius: 30px;
   background-color: #000000;
@@ -1034,6 +1082,13 @@ have a fixed width and height (but it's not required).
   font-weight: bold;
   color: #00CCFF;
   text-align: center;
+}
+
+.innovv-info-btn {
+  margin-top: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+  max-width: 200px;
 }
 
 .modal-img-50w {
@@ -1104,12 +1159,6 @@ have a fixed width and height (but it's not required).
     padding-bottom: 10px;
   }
 
-
-  .innovv-section-first {
-    margin: 20px;
-    padding: 0 5px;
-  }
-
   .innovv-black-bg,
   .innovv-content-box {
     margin-left: auto;
@@ -1151,6 +1200,34 @@ have a fixed width and height (but it's not required).
     justify-content: center;
   }
 
+  .innovv-product-container {
+    margin-top: 0;
+    padding: 0 auto;
+  }
+  
+  .innovv-product-img {
+    margin-top: 5px;
+    width: 75%;
+  }
+
+  .innovv-products .jcarousel {
+    width: 300px;
+    padding: 0 20px;
+  }
+
+  .innovv-gold {
+    padding: 0 30px;
+  }
+
+  .innovv-project-brown-rectangle-bg-small {
+    border: 1px solid #865701;
+    border-radius: 30px;
+    margin: 20px 0;
+    padding: 20px 0;
+    width: 80%;
+    height: 100%;
+  }
+
   .innovv-project-flex > div {
     text-align: center;
     justify-content: space-between;
@@ -1159,14 +1236,14 @@ have a fixed width and height (but it's not required).
   }
 
   .innovv-projects-icon {
-    margin: 0;
-    padding: 0;
+    margin: 10px auto;
+    padding: 10px auto;
     font-weight: bolder;
     background-color: #865701;
   }
   
   .innovv-projects-btn {
-    padding: 0;
+    padding: 20px auto;
     background-color: #865701;
   }
 
@@ -1180,6 +1257,124 @@ have a fixed width and height (but it's not required).
     width: 100%;
     height: 300px;
   }
+
+  .modal {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 70%;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 400px;
+    height: 300px;
+    z-index: 4;
+  }
+
+  .modal-profile {
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 90%;
+    top: 30px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .modal-content-profile {
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 90%;
+    height: 90%;
+    z-index: 4;
+  }
+
+  .modal-project {
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 100%;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .modal-content-project {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 80%;
+    height: 100%;
+    z-index: 4;
+  }
+
+  .modal-dashboard {
+    position: fixed;
+    display: none;
+    width: 80%;
+    height: 90%;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .modal-content-dashboard {
+    position: relative;
+    margin: 10px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 90%;
+    height: 90%;
+    z-index: 4;
+  }
+
+  video {
+    width: 70%;
+  }
+
+
 
   .ie11 .innovv-site-header .innovv-nav,
   .ie10 .innovv-site-header .innovv-nav {
@@ -1335,6 +1530,50 @@ have a fixed width and height (but it's not required).
     z-index: 4;
   }
 
+  .modal-profile {
+    position: fixed;
+    display: none;
+    width: 70%;
+    height: 100%;
+    top: 10px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
+  .modal-content-profile {
+    position: relative;
+    margin: 30px auto;
+    padding: 10px 5px;
+    border: 1px solid #865701;
+    border-radius: 30px;
+    background-color: #000000;
+    width: 400px;
+    height: 500px;
+    z-index: 4;
+  }
+
+  .modal-dashboard {
+    position: fixed;
+    display: none;
+    width: 90%;
+    height: 100%;
+    top: 50px;
+    right: 0;
+    bottom: 0;
+    left: 80px;
+    background-color: rgba(0,0,0,0.8);
+    border: 1px solid #865701;
+    border-radius: 30px;
+    z-index: 2;
+    justify-content: center;
+  }
+
   .modal-content-dashboard {
     position: relative;
     margin: 10px auto;
@@ -1373,6 +1612,20 @@ have a fixed width and height (but it's not required).
     width: 400px;
     height: 500px;
     z-index: 4;
+  }
+
+  .btn {
+    font-size: 10px;
+    font-weight: bolder;
+    color: gold;
+    width: auto;
+  }
+
+  .innovv-info-btn {
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 100px;
   }
 
   #colunmChart {
