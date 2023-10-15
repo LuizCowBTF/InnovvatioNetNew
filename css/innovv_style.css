@@ -289,6 +289,7 @@ footer {
 }
 
 
+
 /* -------------------------------------
 2. Estilos das SECTIONS cabeçalho e menu
 --------------------------------------*/
@@ -2067,44 +2068,149 @@ have a fixed width and height (but it's not required).
   }
 }
 
-@media screen and (width < 400px) {
+@media screen and (200px <= width <= 400px) {
   video {
     width: 100%;
   }
 
+  #home {
+    margin-top: 40px;
+  }
+
+  #about {
+    margin-top: 40px;
+  }
+
   .innovv-site-name > img {
-    margin: 20px 10px;
+    margin: 20px 0;
     width: 60%;
   }
 
-  .form4 {
-    margin-top: 250px;
+  .col-lg-6,
+  .col-md-6 {
+    padding: 5px;
   }
 
-  .innovv-site-header {
-    position: static;
+  .innovv-home-image, 
+  .innovv-image-overlay,
+  .innovv-black-bg {
+    border-radius: 30px;
+    width: 100%;
   }
-
-  .innovv-nav {
-    bottom: -6px;
-  }
-
+  
   .innovv-black-bg,
   .innovv-content-box {
-    width: 98%;
-    height: auto;
+    width: 320px;
+    height: 320px;
+  }
+  
+  .innovv-content-box {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient:vertical;
+    -webkit-box-direction:normal;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;  
+    padding: 0px 5px;
+  }
+
+  .innovv-flex-center {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .innovv-black-bg {
-    background: #1B1B1B;
-    border: 1px solid #865701;
-    border-radius: 30px;
-    padding: 30px;
+    margin: 10px 20px;
+    width: 90%;
+    background: url('../images/round-rectangle.png') no-repeat;
+    background-position: center;
+    background-size: contain;
   }
 
-  .innovv-brown-rectangle-bg {
-    width: 100%;
-    padding: 30px;
+  .innovv-team-menber-container {
+    width: 50%;
+    height: 50%;
+  }
+
+  .innovv-member-img-container {
+    width: 40%;
+    height: 40%;
+  }
+
+  .innovv-img-frame {
+    width: 100px;
+    height: 100px;
+  }
+
+  .tm-team-member-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .innovv-team .jcarousel-control-next {
+    right: 10px;
+  }
+
+  .innovv-team .jcarousel-control-prev {
+    left: 10px;
+  }
+
+  .margin-top-15 {
+    margin-top: 5px;
+  }
+
+  .small {
+    padding-top: 20px; 
+  }
+
+  .innovv-product-img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .innovv-products .jcarousel-control-next {
+    right: 25px;
+  }
+
+  .innovv-products .jcarousel-control-prev {
+    left: 25px;
+  }
+
+  .innovv-brown {
+    font-size: 14px;
+  }
+
+  .innovv-project-flex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .innovv-project-flex > div {
+    text-align: center;
+    justify-content: space-between;
+    font-size: 26px;
+    margin: 20px 20px;
   }
 
   .innovv-project-brown-rectangle-bg-small {
@@ -2112,57 +2218,52 @@ have a fixed width and height (but it's not required).
     border-radius: 30px;
     margin: 20px 0;
     padding: 20px 0;
-    width: 80%;
+    width: 90%;
     height: 100%;
   }
 
-  .innovv-content-box {
-    height: auto;
-    padding: 15px;
+  .innovv-black-bg-form {
+    width: 90%;
+    height: 600px;
+    margin: 100px 20px;
+    background: url('../images/round-rectangle.png') no-repeat;
+    background-position-x: 0%;
+    background-position-y: 0%;
+    background-size: auto;
+    background-position: center;
+    background-size: contain;
   }
 
-  .innovv-section {
-    margin-top: 10px;
+  form {
+    width: 80%;
+    height: 50%;
   }
 
-  .innovv-second-box {
-    margin-top: 5px;
+  .tm-contact-form {
+    margin-top: 15px;
   }
 
-  .innovv-project-flex {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  #contact_message {
+    height: 80px;
   }
 
-  .innovv-project-flex > div {
-    text-align: center;
-    justify-content: space-between;
-    font-size: 26px;
-    margin: 10px auto;
+  .form-group {
+    margin: 5px 20px;
+    width: 80%;
   }
 
-  .innovv-projects-btn {
-    font-size: 26px;
-    padding: 10px;
-    background-color: #865701;
+  .innovv-social-icon {
+    display: inline-block;
+    width: 350px;
+    height: 44px;
   }
 
-  .innovv-projects-icon {
-    font-size: 26px;
-    margin: 5px;
-    font-weight: bolder;
-    background-color: #865701;
+  .innovv-icon {
+    margin-left: 5px;
   }
 
-  .fa {
-    padding: 0;
-    margin: 0;
-    font-size: 26px;
-  }
-
-  .innovv-copyright-container {
-    padding-left: 0;
+  .innovv-logo {
+    width: 80%;
   }
 
   .modal {
@@ -2197,8 +2298,8 @@ have a fixed width and height (but it's not required).
     position: fixed;
     display: none;
     width: 80%;
-    height: 100%;
-    top: 10px;
+    height: 80%;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 40px;
@@ -2225,8 +2326,8 @@ have a fixed width and height (but it's not required).
     position: fixed;
     display: none;
     width: 80%;
-    height: 80%;
-    top: 10px;
+    height: 50%;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 40px;
@@ -2245,7 +2346,7 @@ have a fixed width and height (but it's not required).
     border-radius: 30px;
     background-color: #000000;
     width: 80%;
-    height: 85%;
+    height: 80%;
     z-index: 4;
   }
 
@@ -2253,8 +2354,8 @@ have a fixed width and height (but it's not required).
     position: fixed;
     display: none;
     width: 80%;
-    height: 80%;
-    top: 50px;
+    height: 60%;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 40px;
@@ -2282,7 +2383,7 @@ have a fixed width and height (but it's not required).
     display: none;
     width: 80%;
     height: 80%;
-    top: 10px;
+    top: 100px;
     right: 0;
     bottom: 0;
     left: 40px;
@@ -2295,7 +2396,7 @@ have a fixed width and height (but it's not required).
 
   .modal-content-project {
     position: relative;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 10px 5px;
     border: 1px solid #865701;
     border-radius: 30px;
@@ -2306,44 +2407,55 @@ have a fixed width and height (but it's not required).
   }
 
   .modal-body {
+    margin-top: 5px;
+    margin-left: 1px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00CCFF;
+    text-align: justify;
+    max-height: calc(100vh - 400px);
+    overflow-y: auto;
+  }
+
+  .modal-footer {
+    margin-top: 3px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: auto 10px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #00CCFF;
+    text-align: center;
+  }
+
+  .innovv-profile-btn {
+    width: 50%;
+  }
+
+  .modal-body-rectangle-bg {
     margin-bottom: 5px;
     max-height: calc(100vh - 300px);
     overflow-y: auto;
   }
 
-  .modal-body-rectangle-bg {
-    margin-bottom: 5px;
-    max-height: calc(100vh - 250px);
-    overflow-y: auto;
-  }
-
-  .btn {
-    font-weight: bolder;
-    color: gold;
-    width: auto;
-  }
-
-  .innovv-profile-btn {
-    margin-top: 10px;
-    padding-left: 15px;
-    padding-right: 15px;
-    max-width: 100px;
-  }
-
-  .innovv-partner-img {
-    width: 25%;
-  }
-
   #colunmChart {
     width: 200px;
-    height: 200px;
+    height: 150px;
     font-size: 10px;
     margin: 0 auto;
     padding: 5px;
     border-radius: 20px;
     background-color: #FFFFFF;
+    tbody {
+      margin-top: 10px;
+    }
     th {
-      font-size: 10px;
+      font-size: 5px;
       padding: 0;
       margin-bottom: 50px;
     }
@@ -2355,7 +2467,7 @@ have a fixed width and height (but it's not required).
 
   #lineChart {
     width: 200px;
-    height: 200px;
+    height: 150px;
     font-size: 10px;
     margin: 0 auto;
     padding: 5px;
@@ -2364,38 +2476,20 @@ have a fixed width and height (but it's not required).
   }
   
   #barChart {
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 150px;
     font-size: 10px;
     margin: 0 auto;
     padding: 0;
     border-radius: 20px;
     background-color: #FFFFFF;
-    tbody {
-      padding: 0
-    }
-    th {
-      font-size: 10px;
-      padding: 0px;
-      margin-bottom: 10px;
-    }
-    td {
-      margin-left: 5px;
-      padding: 0;
-    }
   }
 
   .img-modal {
-    width: 70%;
-  }
-
-  .img-modal-h {
-    width: 30%;
-  }
-
-  .innovv-logo {
     width: 80%;
   }
+
+
 }
 
 

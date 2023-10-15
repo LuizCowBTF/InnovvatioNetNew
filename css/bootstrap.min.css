@@ -6776,7 +6776,8 @@ button.close {
     top: -9999px;
     width: 50px;
     height: 50px;
-    overflow: scroll
+    overflow: scroll;
+    color: #00CCFF;
 }
 
 @media (min-width:768px) {
