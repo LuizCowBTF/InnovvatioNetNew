@@ -113,7 +113,7 @@ footer {
 }
 
 .container-nav {
-  margin: 0;
+  margin-top: 0;
 }
 
 .col-md-6,
@@ -725,6 +725,7 @@ h3.innovv-service-title {
 
 
 form {
+  margin-top: 150px;
   width: 430px;
 }
 
